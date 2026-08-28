@@ -211,6 +211,41 @@ def render(snapshot, findings, history):
             a("| %s | %s | %s |" % (p["name"], _usd(p.get("volume_24h_usd")), share))
         a("")
 
+    # ---------------- roadmap ----------------------------------------------
+    upg = snapshot.get("upgrades") or {}
+    simds = upg.get("simds") or []
+    rels = upg.get("releases") or []
+    if simds or rels:
+        a("## Protocol roadmap")
+        a("")
+        a("Read from the source of record rather than a hand-kept list, so it stays "
+          "correct without anyone maintaining it: open pull requests against the Solana "
+          "Improvement Documents repo are what the protocol is being *asked* to change, "
+          "and Agave releases are what validators are actually being asked to *run*.")
+        a("")
+    if simds:
+        a("### Open SIMDs (most recently updated)")
+        a("")
+        a("| SIMD | Proposal | Updated |")
+        a("|---|---|---|")
+        for d in simds:
+            num = "SIMD-%s" % d["simd"] if d.get("simd") else "-"
+            title = (d.get("title") or "").replace("|", "\\|")
+            draft = " _(draft)_" if d.get("draft") else ""
+            a("| %s | [%s](%s)%s | %s |"
+              % (num, title, d.get("url") or "", draft, (d.get("updated_at") or "")[:10]))
+        a("")
+    if rels:
+        a("### Recent Agave validator releases")
+        a("")
+        a("| Tag | Release | Published |")
+        a("|---|---|---|")
+        for r in rels:
+            a("| [`%s`](%s) | %s | %s |"
+              % (r.get("tag") or "", r.get("url") or "",
+                 (r.get("name") or "").replace("|", "\\|"), (r.get("published_at") or "")[:10]))
+        a("")
+
     # ---------------- trend ------------------------------------------------
     if len(history) >= 2:
         a("## Trend since first snapshot")
@@ -242,6 +277,7 @@ def render(snapshot, findings, history):
     a("| CoinGecko public API | SOL price, market cap, spot volume | no |")
     a("| DeFiLlama | DeFi TVL (90d series), DEX volume, chain fees | no |")
     a("| DeFiLlama stablecoins | stablecoin supply settled on Solana, by peg | no |")
+    a("| GitHub public API | open SIMD proposals, Agave validator client releases | no |")
     a("")
     a("Every request is a plain HTTPS GET/POST from `urllib` in the Python standard "
       "library. There are no API keys, no accounts and no third-party packages, so the "

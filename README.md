@@ -84,6 +84,7 @@ chart, both drawn from `history.jsonl`.
 | CoinGecko | `api.coingecko.com/api/v3/simple/price` | SOL price, market cap, 24h volume and change | none |
 | DeFiLlama | `api.llama.fi` | Solana DeFi TVL (90-day series), DEX volume by protocol, chain fees | none |
 | DeFiLlama stablecoins | `stablecoins.llama.fi` | stablecoin circulating supply on Solana, by peg | none |
+| GitHub REST API | `api.github.com` | open SIMD proposals, Agave validator client releases | none |
 
 Three integration decisions are worth calling out:
 
@@ -235,6 +236,16 @@ kilobytes a day.
 - CoinGecko's keyless tier is rate-limited; the retry/backoff in `http.py` absorbs
   the occasional 429, and a hard failure degrades to a missing market section
   rather than a failed run.
-- Tokenized-equity volumes and upgrade tracking (Alpenglow, SIMD-525) are not yet
-  automated — there is no keyless machine-readable source for either that would
-  not amount to scraping a page whose layout changes.
+- Tokenized-equity volumes are not automated. There is no keyless machine-readable
+  source for them that would not amount to scraping a page whose layout changes,
+  and a number that breaks silently is worse than an absent one.
+- Upgrade tracking is automated, but indirectly, and it is worth knowing how. There
+  is no roadmap API. What exists is the source of record: every protocol change is
+  proposed as a pull request against the Solana Improvement Documents repo and ships
+  in a tagged Agave validator release, both readable through the public GitHub API
+  with no key. The **Protocol roadmap** section derives from those two feeds, so it
+  keeps working with nobody maintaining a list. What it does *not* do is editorialise
+  — it will show you SIMD-0612 the day it is opened, but it will not tell you which
+  proposal matters most this quarter. Unauthenticated GitHub requests are rate
+  limited per IP; a hard failure degrades to a missing roadmap section, as with
+  every other source.

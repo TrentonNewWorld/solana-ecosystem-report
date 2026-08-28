@@ -6,6 +6,7 @@ metrics that did resolve. Partial data is far more useful than no report.
 """
 
 import datetime
+import re
 import statistics
 
 from .http import FetchError, RpcClient, get_json
@@ -16,6 +17,7 @@ DEFAULT_RPC = "https://api.mainnet-beta.solana.com"
 COINGECKO = "https://api.coingecko.com/api/v3"
 LLAMA = "https://api.llama.fi"
 LLAMA_STABLES = "https://stablecoins.llama.fi"
+GITHUB = "https://api.github.com"
 
 
 def _utcnow():
@@ -301,3 +303,69 @@ def collect_fees():
         fees_30d_usd=data.get("total30d"),
         change_1d_pct=data.get("change_1d"),
     )
+
+
+# --------------------------------------------------------------------------
+# Protocol roadmap: SIMDs and validator client releases
+# --------------------------------------------------------------------------
+
+def collect_upgrades(simd_count=8, release_count=3):
+    """What the protocol is about to change.
+
+    The listing asks for upgrade tracking by name (Alpenglow, SIMD-525). There
+    is no vendor "roadmap API", but the roadmap is not a secret either: every
+    protocol change lands as a pull request against the Solana Improvement
+    Documents repo, and every shipped change lands as a tagged release of the
+    Agave validator client. Both are readable through the public GitHub API
+    with no key, so this stays inside the no-API-keys constraint.
+
+    Open SIMD PRs are what is *proposed*; recent Agave releases are what
+    validators are actually being asked to run. Together they are the honest
+    machine-readable answer to "what is coming", derived rather than
+    hand-maintained -- so it keeps working after this report is handed over.
+    """
+    out = {}
+    try:
+        prs = get_json(
+            GITHUB + "/repos/solana-foundation/solana-improvement-documents/pulls"
+            "?state=open&sort=updated&direction=desc&per_page=%d" % simd_count)
+        simds = []
+        for pr in prs:
+            title = (pr.get("title") or "").strip()
+            simds.append({
+                "number": pr.get("number"),
+                "title": title,
+                "simd": _simd_number(title, pr.get("head") or {}),
+                "url": pr.get("html_url"),
+                "updated_at": pr.get("updated_at"),
+                "draft": bool(pr.get("draft")),
+            })
+        out["simds"] = simds
+    except FetchError as exc:
+        return _fail(exc)
+
+    try:
+        rels = get_json(GITHUB + "/repos/anza-xyz/agave/releases?per_page=%d" % release_count)
+        out["releases"] = [{
+            "tag": r.get("tag_name"),
+            "name": (r.get("name") or "").strip(),
+            "published_at": r.get("published_at"),
+            "prerelease": bool(r.get("prerelease")),
+            "url": r.get("html_url"),
+        } for r in rels]
+    except FetchError as exc:
+        out["releases"] = []
+        out["releases_error"] = str(exc)
+
+    return _ok(**out)
+
+
+def _simd_number(title, head):
+    """Pull the SIMD number out of a PR title or branch name when it has one.
+    Titles are not standardised, so this is best-effort and returns None rather
+    than guessing."""
+    for text in (title, head.get("ref") or ""):
+        m = re.search(r"(?:simd[-_ ]?|^)(\d{3,4})\b", text, re.I)
+        if m:
+            return int(m.group(1))
+    return None

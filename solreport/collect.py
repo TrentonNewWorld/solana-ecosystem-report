@@ -24,6 +24,7 @@ def build_snapshot(rpc_endpoint=sources.DEFAULT_RPC, perf_samples=60, skip=()):
         "stablecoins": sources.collect_stablecoins,
         "dex": sources.collect_dex_volume,
         "fees": sources.collect_fees,
+        "upgrades": sources.collect_upgrades,
     }
 
     snapshot = {
@@ -34,6 +35,7 @@ def build_snapshot(rpc_endpoint=sources.DEFAULT_RPC, perf_samples=60, skip=()):
             "coingecko": sources.COINGECKO,
             "defillama": sources.LLAMA,
             "defillama_stablecoins": sources.LLAMA_STABLES,
+            "github": sources.GITHUB,
         },
     }
 

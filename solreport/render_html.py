@@ -223,6 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
 """
 
 
+def _esc(t):
+    """PR titles and release names are third-party text. Escape them rather than
+    trusting whatever someone typed into a GitHub title field."""
+    return (str(t).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
 def _usd(v):
     if v is None:
         return "n/a"
@@ -350,6 +357,39 @@ def render(snapshot, findings, history):
         <th>Last vote slot</th></tr></thead><tbody>%s</tbody></table></div>
     </div>""" % delinq_rows) if delinq_rows else ""
 
+    upg = snapshot.get("upgrades") or {}
+    simd_rows = "".join(
+        '<tr><td class="k-mono">%s</td><td><a href="%s">%s</a>%s</td><td class="num">%s</td></tr>'
+        % ("SIMD-%s" % d["simd"] if d.get("simd") else "&mdash;",
+           _esc(d.get("url") or "#"), _esc(d.get("title") or ""),
+           ' <span class="badge">draft</span>' if d.get("draft") else "",
+           (d.get("updated_at") or "")[:10])
+        for d in (upg.get("simds") or []))
+    rel_rows = "".join(
+        '<tr><td class="k-mono"><a href="%s">%s</a></td><td>%s</td><td class="num">%s</td></tr>'
+        % (_esc(r.get("url") or "#"), _esc(r.get("tag") or ""),
+           _esc(r.get("name") or ""), (r.get("published_at") or "")[:10])
+        for r in (upg.get("releases") or []))
+    upgrades_block = ("""
+    <h2>Protocol roadmap</h2>
+    <div class="two">
+      <div class="panel">
+        <h3>Proposed changes &middot; open SIMDs</h3>
+        <div class="sub">Most recently updated open pull requests against the Solana
+          Improvement Documents repo &mdash; what the protocol is being asked to change,
+          read straight from the source of record rather than a hand-kept list.</div>
+        <div class="scroll"><table><thead><tr><th>SIMD</th><th>Proposal</th><th>Updated</th>
+          </tr></thead><tbody>%s</tbody></table></div>
+      </div>
+      <div class="panel">
+        <h3>Shipped &middot; Agave validator releases</h3>
+        <div class="sub">What validators are actually being asked to run. A proposal only
+          matters once it lands in a client release.</div>
+        <div class="scroll"><table><thead><tr><th>Tag</th><th>Release</th><th>Published</th>
+          </tr></thead><tbody>%s</tbody></table></div>
+      </div>
+    </div>""" % (simd_rows, rel_rows)) if simd_rows else ""
+
     history_block = ("""
     <h2>Across snapshots</h2>
     <div class="panel">
@@ -440,6 +480,7 @@ def render(snapshot, findings, history):
   </div>
 </div>
 %(delinq)s
+%(upgrades)s
 %(history)s
 
 <h2>Data sources</h2>
@@ -453,6 +494,8 @@ def render(snapshot, findings, history):
     <tr><td class="k-mono">api.llama.fi</td><td>DeFi TVL (90d), DEX volume, chain fees</td>
       <td>none</td></tr>
     <tr><td class="k-mono">stablecoins.llama.fi</td><td>stablecoin supply on Solana, by peg</td>
+      <td>none</td></tr>
+    <tr><td class="k-mono">api.github.com</td><td>open SIMD proposals, Agave client releases</td>
       <td>none</td></tr>
   </tbody></table></div>
 </div>
@@ -487,6 +530,7 @@ def render(snapshot, findings, history):
         "nak": val.get("nakamoto_coefficient"),
         "valrows": val_rows,
         "delinq": delinq_block,
+        "upgrades": upgrades_block,
         "history": history_block,
         "rpc": (snapshot["sources"]["solana_rpc"] or "").replace("https://", ""),
     }
