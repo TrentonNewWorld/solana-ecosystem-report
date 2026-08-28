@@ -119,10 +119,19 @@ The report is designed to need zero maintenance, in four layers:
    `data/history.jsonl`. The file is the dataset — small enough to live in git,
    so the history travels with the repo and every past report is reproducible.
 3. **Scheduled refresh** (`.github/workflows/refresh.yml`). A cron runs every 6
-   hours (one line to change for hourly): it runs the tests, regenerates all
-   three outputs, commits the new snapshot back to the repo so the time series
-   grows on its own, and publishes `output/` to GitHub Pages. Manual refresh is
-   available from the Actions tab via `workflow_dispatch`.
+   hours — at `41 1,7,13,19 * * *`, four times a day: it runs the tests,
+   regenerates all three outputs, commits the new snapshot back to the repo so
+   the time series grows on its own, and publishes `docs/` to GitHub Pages.
+   Manual refresh is available from the Actions tab via `workflow_dispatch`.
+
+   The odd minute and odd hour are deliberate, and worth stating because it is
+   the one part of "auto-updating" that quietly fails. GitHub's own docs warn
+   that the `schedule` event "can be delayed during periods of high load", and a
+   dropped run is never retried. Load peaks at the top of every hour and at
+   midnight UTC, which is exactly where the obvious `0 */6 * * *` puts you: that
+   schedule registered as active here and fired zero times across two
+   consecutive windows before it was moved off-peak. Anything relying on
+   GitHub cron should assume best-effort delivery and pick an unpopular minute.
 4. **Self-monitoring.** `--fail-on-critical` exits 2 when a critical anomaly
    fires, so the same command that generates the report can be the alerting
    check in any cron or monitoring system.
@@ -130,7 +139,7 @@ The report is designed to need zero maintenance, in four layers:
 To run it somewhere other than GitHub Actions, the whole job is one cron line:
 
 ```cron
-0 */6 * * * cd /srv/solreport && /usr/bin/python3 -m solreport --out /var/www/solana
+41 1,7,13,19 * * * cd /srv/solreport && /usr/bin/python3 -m solreport --out /var/www/solana
 ```
 
 ---

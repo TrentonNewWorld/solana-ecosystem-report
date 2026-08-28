@@ -8,7 +8,13 @@ name: Refresh Solana report
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours; drop to "0 * * * *" for hourly
+    # Every 6 hours, deliberately at :41 past an ODD hour rather than "0 */6 * * *".
+    # GitHub load-sheds scheduled runs and its own docs warn they "can be delayed
+    # during periods of high load" — the top of the hour, and midnight UTC most of
+    # all, are the worst slots, and dropped runs are simply never retried. The
+    # original on-the-hour schedule registered as active but fired zero times in
+    # two consecutive windows. An off-peak minute is the documented mitigation.
+    - cron: "41 1,7,13,19 * * *"
   workflow_dispatch:         # manual refresh button in the Actions tab
   push:
     branches: [main]
