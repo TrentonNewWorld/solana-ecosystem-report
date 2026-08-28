@@ -1,0 +1,52 @@
+name: Refresh Solana report
+
+# The automation strategy in one file: a cron refreshes the data, the pipeline
+# regenerates all three output formats into docs/, and the new snapshot is
+# committed back to the repo. GitHub Pages serves docs/ off main, so the commit
+# IS the deploy — no Pages artifact, no id-token, no server, no database and no
+# API key to rotate. history.jsonl grows one line per run into a real time series.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours; drop to "0 * * * *" for hourly
+  workflow_dispatch:         # manual refresh button in the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit the refreshed snapshot back
+
+concurrency:
+  group: solreport-refresh
+  cancel-in-progress: false   # never interrupt a run mid-commit
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # No `pip install` step: the pipeline is standard library only.
+
+      - name: Run the test suite
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate report
+        run: python -m solreport --out docs --data data
+
+      - name: Upload outputs as build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: solana-report-${{ github.run_number }}
+          path: docs/
+
+      - name: Commit refreshed snapshot (this is the Pages deploy)
+        run: |
+          git config user.name  "solreport-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history.jsonl docs/
+          git diff --staged --quiet || git commit -m "chore: refresh snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
