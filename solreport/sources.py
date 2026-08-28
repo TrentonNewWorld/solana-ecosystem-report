@@ -309,7 +309,7 @@ def collect_fees():
 # Protocol roadmap: SIMDs and validator client releases
 # --------------------------------------------------------------------------
 
-def collect_upgrades(simd_count=8, release_count=3):
+def collect_upgrades(simd_count=8, release_count=6):
     """What the protocol is about to change.
 
     The listing asks for upgrade tracking by name (Alpenglow, SIMD-525). There

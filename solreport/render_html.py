@@ -78,6 +78,7 @@ td.num{text-align:right}
 .bar{height:7px;background:var(--panel-2);border-radius:4px;overflow:hidden;margin-top:7px}
 .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent-2),var(--accent))}
 svg{display:block;width:100%;height:auto;overflow:visible}
+.nw{white-space:nowrap}
 .src{font-family:var(--mono);font-size:11.5px;color:var(--dim)}
 footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
   color:var(--dim);font-size:12px}
@@ -359,14 +360,16 @@ def render(snapshot, findings, history):
 
     upg = snapshot.get("upgrades") or {}
     simd_rows = "".join(
-        '<tr><td class="k-mono">%s</td><td><a href="%s">%s</a>%s</td><td class="num">%s</td></tr>'
+        '<tr><td class="k-mono nw">%s</td><td><a href="%s">%s</a>%s</td>'
+        '<td class="num nw">%s</td></tr>'
         % ("SIMD-%s" % d["simd"] if d.get("simd") else "&mdash;",
            _esc(d.get("url") or "#"), _esc(d.get("title") or ""),
            ' <span class="badge">draft</span>' if d.get("draft") else "",
            (d.get("updated_at") or "")[:10])
         for d in (upg.get("simds") or []))
     rel_rows = "".join(
-        '<tr><td class="k-mono"><a href="%s">%s</a></td><td>%s</td><td class="num">%s</td></tr>'
+        '<tr><td class="k-mono nw"><a href="%s">%s</a></td><td>%s</td>'
+        '<td class="num nw">%s</td></tr>'
         % (_esc(r.get("url") or "#"), _esc(r.get("tag") or ""),
            _esc(r.get("name") or ""), (r.get("published_at") or "")[:10])
         for r in (upg.get("releases") or []))
