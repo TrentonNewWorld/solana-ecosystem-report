@@ -1,13 +1,13 @@
 # Solana Ecosystem Report
 
-_Generated 2026-08-28T06:50:33Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-08-28T06:50:53Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-08-28T06:50:33Z` |
+| Snapshot | `2026-08-28T06:50:53Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 7.95s |
-| Snapshots in history | 19 |
+| Collection time | 8.0s |
+| Snapshots in history | 21 |
 | Anomalies flagged | 0 (0 critical) |
 
 ## At a glance
@@ -28,16 +28,16 @@ No anomalies detected. Every monitored metric is inside its absolute safety band
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.3.0-beta.2 |
-| Current epoch | 1023 (80.47% complete) |
-| Slot | 347,635 of 432,000 in epoch |
-| Absolute slot | 442,283,635 |
-| Block height | 420,331,810 |
-| Lifetime transactions | 542,652,445,251 |
+| Current epoch | 1023 (80.48% complete) |
+| Slot | 347,691 of 432,000 in epoch |
+| Absolute slot | 442,283,691 |
+| Block height | 420,331,866 |
+| Lifetime transactions | 542,652,521,787 |
 | TPS (now / mean / peak) | 3,842 / 3,467 / 4,103 |
 | True TPS, non-vote (now / mean) | 1,974 / 1,588 |
 | Slot time (mean / worst) | 0.366s / 0.377s |
 
-Epoch 1023 has **84,365 slots remaining**, about **8h 34m** at the current slot time.
+Epoch 1023 has **84,309 slots remaining**, about **8h 34m** at the current slot time.
 
 ## Validator set
 
@@ -136,7 +136,7 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-08-28T06:50:33Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-08-28T06:50:53Z | Change |
 |---|---|---|---|
 | SOL price | $107 | $108 | +0.22% |
 | DeFi TVL | $5.94B | $5.94B | -0.03% |
