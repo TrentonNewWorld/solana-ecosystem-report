@@ -128,12 +128,17 @@ The report is designed to need zero maintenance, in four layers:
 2. **Append-only history.** Each run writes one compact JSON line to
    `data/history.jsonl`. The file is the dataset — small enough to live in git,
    so the history travels with the repo and every past report is reproducible.
-3. **Redundant scheduled refresh** (`.github/workflows/refresh.yml`). Twelve
-   cron windows a day, two hours apart, guaranteeing a refresh at least every 6
-   hours: it runs the tests, regenerates all three outputs, commits the new
+3. **On-demand refresh, backed by a best-effort schedule**
+   (`.github/workflows/refresh.yml`). The cadence you can rely on is
+   `workflow_dispatch`: one click in the Actions tab, or `gh workflow run
+   refresh.yml`, refreshes everything on demand and is the supported way to
+   force an update. On top of that sit twelve cron windows a day, two hours
+   apart, which refresh the report roughly every 6 hours *when GitHub delivers
+   them* — a schedule is a request, not a promise, so it is a best-effort
+   top-up rather than a guarantee (see below). Either trigger does the same
+   thing: runs the tests, regenerates all three outputs, commits the new
    snapshot back so the time series grows on its own, and publishes `docs/` to
-   GitHub Pages. Manual refresh is available any time from the Actions tab via
-   `workflow_dispatch`.
+   GitHub Pages.
 
    The redundancy is the interesting part, and it is worth stating plainly
    because it is the one place "auto-updating" quietly fails. GitHub's own docs
@@ -147,9 +152,9 @@ The report is designed to need zero maintenance, in four layers:
    per window is still a single point of failure. So the schedule is redundant
    instead: `17 1,5,9,13,17,21` and `47 3,7,11,15,19,23`, on odd hours at two
    decorrelated off-peak minutes, never on the hour and never at midnight UTC.
-   GitHub has to drop two consecutive attempts before the 6-hour promise is even
-   at risk. The extra runs cost nothing — public-repo minutes are free, and a
-   window where the data has not moved exits early without a commit.
+   GitHub has to drop two consecutive attempts before the 6-hour target slips.
+   The extra runs cost nothing — public-repo minutes are free, and a window
+   where the data has not moved exits early without a commit.
 
    **How to verify rather than trust it:** every page and both machine-readable
    outputs carry the UTC timestamp of the run that produced them, and the run
