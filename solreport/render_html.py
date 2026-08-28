@@ -32,10 +32,12 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:.09em;color:var(--mute
   margin:38px 0 14px;font-weight:600}
 .meta{font-family:var(--mono);font-size:12px;color:var(--dim);text-align:right}
 .meta b{color:var(--muted);font-weight:500}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(224px,1fr))}
 .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
 .tile .k{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
-.tile .v{font-size:25px;font-family:var(--mono);margin:6px 0 2px;letter-spacing:-.02em}
+.tile .v{font-size:25px;font-family:var(--mono);margin:6px 0 2px;letter-spacing:-.02em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .v .u{font-size:14px;color:var(--muted);margin-left:4px;letter-spacing:0}
 .tile .s{font-size:12px;color:var(--dim);font-family:var(--mono)}
 .up{color:var(--ok)} .down{color:var(--crit)} .flat{color:var(--muted)}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
@@ -233,7 +235,19 @@ def _usd(v):
 def _num(v, d=0):
     if v is None:
         return "n/a"
-    return format(round(v, d) if d else round(v), ",")
+    if d:  # fixed precision: "$107.30", never "$107.3"
+        return format(v, ",.%df" % d)
+    return format(round(v), ",")
+
+
+def _compact(v, d=2):
+    """Hero-number form of a large count. The exact figure belongs on the sub-line."""
+    if v is None:
+        return "n/a"
+    for unit, scale in (("B", 1e9), ("M", 1e6), ("K", 1e3)):
+        if abs(v) >= scale:
+            return "%.*f%s" % (d, v / scale, unit)
+    return format(round(v), ",")
 
 
 def _pct(v, d=2, sign=False):
@@ -294,9 +308,10 @@ def render(snapshot, findings, history):
               _cls(dex.get("change_1d_pct"))),
         _tile("Fees + app revenue 24h", _usd(fees.get("fees_24h_usd")),
               "%s 1d" % _pct(fees.get("change_1d_pct"), 2, True), _cls(fees.get("change_1d_pct"))),
-        _tile("Circulating supply", "%s SOL" % _num(supply.get("circulating_sol")),
-              "%s of total" % _pct(supply.get("circulating_pct"))),
-        _tile("Lifetime transactions", _num(epoch.get("transaction_count")),
+        _tile("Circulating supply",
+              '%s<span class="u">SOL</span>' % _compact(supply.get("circulating_sol")),
+              "%s of total supply" % _pct(supply.get("circulating_pct"))),
+        _tile("Lifetime transactions", _compact(epoch.get("transaction_count")),
               "block height %s" % _num(epoch.get("block_height"))),
     ])
 
