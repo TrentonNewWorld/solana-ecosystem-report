@@ -1,13 +1,23 @@
 # solreport — an auto-updating Solana ecosystem report
 
+**▶ Live dashboard: <https://trentonnewworld.github.io/solana-ecosystem-report/>**
+
+| Deliverable | Open it |
+|---|---|
+| Interactive dashboard (live, auto-published) | <https://trentonnewworld.github.io/solana-ecosystem-report/> |
+| Sample report — human-readable Markdown | [`docs/report.md`](docs/report.md) |
+| Sample report — machine-readable JSON | [`docs/report.json`](docs/report.json) |
+| Refresh workflow | [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) |
+| This write-up | you are reading it |
+
 A self-refreshing report on the state of the Solana network, published in three
 formats from one pipeline:
 
 | Output | File | For |
 |---|---|---|
-| Interactive dashboard | `output/index.html` | humans — dark theme, charts, sortable tables |
-| Human-readable report | `output/report.md` | reading in a repo, pasting into a doc |
-| Machine-readable data | `output/report.json` | other programs, agents, alerting |
+| Interactive dashboard | [`output/index.html`](docs/index.html) | humans — dark theme, charts, sortable tables |
+| Human-readable report | [`output/report.md`](docs/report.md) | reading in a repo, pasting into a doc |
+| Machine-readable data | [`output/report.json`](docs/report.json) | other programs, agents, alerting |
 
 Plus `data/history.jsonl` — an append-only snapshot history that turns single
 readings into a time series, and doubles as the baseline for anomaly detection.
@@ -27,7 +37,7 @@ python -m solreport          # that is the entire setup
 Requires Python 3.9+ and nothing else.
 
 ```bash
-git clone <this repo> && cd solana-ecosystem-report
+git clone https://github.com/TrentonNewWorld/solana-ecosystem-report && cd solana-ecosystem-report
 python -m solreport                       # collect, detect, render
 open output/index.html                    # the dashboard (file:// works — it is self-contained)
 ```
