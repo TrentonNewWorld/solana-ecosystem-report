@@ -1,0 +1,9 @@
+# data/history.jsonl is an append-only log written from two places (the Actions
+# cron and any local run). A union merge keeps every snapshot instead of forcing
+# a hand-resolve; solreport dedupes by timestamp on load.
+data/history.jsonl merge=union
+
+# Generated artifacts: keep them out of diffs and language stats. They are
+# committed on purpose (branch-based Pages serves docs/ directly).
+docs/*      linguist-generated=true
+output/*    linguist-generated=true
