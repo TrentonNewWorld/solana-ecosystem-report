@@ -149,6 +149,23 @@ class TestAnomaly(unittest.TestCase):
         codes = [f["code"] for f in anomaly.detect(snap, row, long)]
         self.assertIn("zscore_price_usd", codes)
 
+    def test_tiny_move_on_a_flat_baseline_is_not_reported(self):
+        """A baseline with almost no spread makes ordinary drift score many
+        sigma. The materiality gate must swallow it, or every quiet period
+        produces a fake 'critical'."""
+        snap = fixture()
+        snap["market"]["price_usd"] = 151.5  # +1% on a 150 median: not news
+        row = store.summarize(snap)
+        history = [dict(store.summarize(fixture()), ts="t%d" % i) for i in range(20)]
+        for i, r in enumerate(history):
+            r["price_usd"] = 150.0 + (i % 2) * 0.01  # spread of one cent
+        codes = [f["code"] for f in anomaly.detect(snap, row, history)]
+        self.assertNotIn("zscore_price_usd", codes)
+        # ...but a move that clears the gate on that same baseline still fires.
+        snap["market"]["price_usd"] = 180.0
+        codes = [f["code"] for f in anomaly.detect(snap, store.summarize(snap), history)]
+        self.assertIn("zscore_price_usd", codes)
+
     def test_zero_variance_baseline_does_not_divide_by_zero(self):
         snap = fixture()
         snap["market"]["price_usd"] = 150.0

@@ -155,6 +155,18 @@ an anomaly, a falling one is good news, and a *falling* Nakamoto coefficient is
 the bad direction. They activate at 8 snapshots and stay quiet before that
 rather than reporting noise as signal.
 
+**Materiality gate.** A z-score divides by the spread of the baseline, so after a
+quiet stretch the divisor collapses and an ordinary 1% drift scores five sigma.
+That is statistically true and editorially useless — a dashboard that shouts
+"critical" at normal TPS jitter teaches its reader to ignore it. Every z-finding
+therefore has to clear a second, independent gate: the move must also be a
+material fraction of the median in its own right (5% for TPS and slot time, 3%
+for price, TVL and stablecoin supply, 10% for the Nakamoto coefficient, 15% for
+DEX volume, 25% for the small, noisy delinquency counts). Both gates must fire,
+so a reported finding is always unusual for this chain *and* big enough to care
+about. The percentage move is printed in the finding text so the reader can judge
+it directly.
+
 Every finding carries a severity, the observed value, the expected range and a
 plain-English sentence, so the identical object renders into the JSON, the
 Markdown table and the dashboard without being re-derived three times.

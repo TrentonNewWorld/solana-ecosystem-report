@@ -16,22 +16,33 @@ without re-deriving anything.
 
 import statistics
 
-# metric -> (label, direction, warn_z, crit_z, unit)
+# metric -> (label, direction, warn_z, crit_z, unit, min_rel)
 #   direction: "both" | "up" (only high is bad) | "down" (only low is bad)
+#   min_rel:   the move must ALSO be at least this fraction of the median before
+#              it is reported at all. See MATERIALITY below.
 Z_RULES = [
-    ("tps_mean", "Mean TPS", "both", 3.0, 4.5, "tx/s"),
-    ("true_tps_mean", "True TPS (non-vote)", "both", 3.0, 4.5, "tx/s"),
-    ("slot_time_mean_s", "Mean slot time", "up", 3.0, 4.5, "s"),
-    ("delinquent_stake_pct", "Delinquent stake", "up", 3.0, 4.5, "%"),
-    ("validators_delinquent", "Delinquent validators", "up", 3.0, 4.5, ""),
-    ("nakamoto_coefficient", "Nakamoto coefficient", "down", 3.0, 4.5, ""),
-    ("price_usd", "SOL price", "both", 3.0, 4.5, "USD"),
-    ("tvl_usd", "DeFi TVL", "both", 3.0, 4.5, "USD"),
-    ("stablecoin_usd", "Stablecoin supply", "both", 3.0, 4.5, "USD"),
-    ("dex_volume_24h_usd", "DEX volume (24h)", "both", 3.0, 4.5, "USD"),
+    ("tps_mean", "Mean TPS", "both", 3.0, 4.5, "tx/s", 0.05),
+    ("true_tps_mean", "True TPS (non-vote)", "both", 3.0, 4.5, "tx/s", 0.05),
+    ("slot_time_mean_s", "Mean slot time", "up", 3.0, 4.5, "s", 0.05),
+    ("delinquent_stake_pct", "Delinquent stake", "up", 3.0, 4.5, "%", 0.25),
+    ("validators_delinquent", "Delinquent validators", "up", 3.0, 4.5, "", 0.25),
+    ("nakamoto_coefficient", "Nakamoto coefficient", "down", 3.0, 4.5, "", 0.10),
+    ("price_usd", "SOL price", "both", 3.0, 4.5, "USD", 0.03),
+    ("tvl_usd", "DeFi TVL", "both", 3.0, 4.5, "USD", 0.03),
+    ("stablecoin_usd", "Stablecoin supply", "both", 3.0, 4.5, "USD", 0.03),
+    ("dex_volume_24h_usd", "DEX volume (24h)", "both", 3.0, 4.5, "USD", 0.15),
 ]
 
 MIN_HISTORY = 8  # below this, z-scores are noise; absolute rules still apply
+
+# MATERIALITY. A robust z-score divides by the spread of the baseline, so when a
+# metric has been unusually flat the divisor collapses and an ordinary 1% drift
+# scores 5 sigma. Statistically that is correct and editorially it is useless: a
+# dashboard that shouts "critical" at normal TPS jitter trains its reader to
+# ignore it. Every z-finding therefore has to clear a second, independent gate --
+# the move must be a material fraction of the median in its own right. Both gates
+# must fire, so a finding is always "unusual for this chain AND big enough to
+# care about".
 
 
 def _robust_z(value, baseline):
@@ -125,7 +136,7 @@ def historical_checks(snapshot_row, history):
     findings = []
     if len(history) < MIN_HISTORY:
         return findings
-    for key, label, direction, warn_z, crit_z, unit in Z_RULES:
+    for key, label, direction, warn_z, crit_z, unit, min_rel in Z_RULES:
         value = snapshot_row.get(key)
         if value is None:
             continue
@@ -139,12 +150,16 @@ def historical_checks(snapshot_row, history):
             continue
         if direction == "down" and z > 0:
             continue
+        if abs(value - med) < min_rel * abs(med):
+            continue  # unusual for the baseline, but too small to be news
         sev = "critical" if abs(z) >= crit_z else "warning"
         findings.append(_f(
             sev, "zscore_%s" % key, label, value,
             "%s +/- %s (median of last %d)" % (_fmt(med, unit), _fmt(spread, unit), len(baseline)),
-            "%s is %s, %.1f robust standard deviations %s its recent median of %s."
-            % (label, _fmt(value, unit), abs(z), "above" if z > 0 else "below", _fmt(med, unit)),
+            "%s is %s, %.1f robust standard deviations %s its recent median of %s "
+            "(%+.1f%%)."
+            % (label, _fmt(value, unit), abs(z), "above" if z > 0 else "below",
+               _fmt(med, unit), 100.0 * (value - med) / med if med else 0.0),
             z=round(z, 2),
         ))
     return findings
