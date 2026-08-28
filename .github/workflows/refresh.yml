@@ -45,8 +45,28 @@ jobs:
 
       - name: Commit refreshed snapshot (this is the Pages deploy)
         run: |
+          set -u
           git config user.name  "solreport-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/history.jsonl docs/
-          git diff --staged --quiet || git commit -m "chore: refresh snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          # A concurrent commit (a manual push, or an overlapping run) rejects the
+          # push. Integrate and regenerate rather than failing the refresh:
+          # history.jsonl union-merges via .gitattributes, and docs/ is rebuilt
+          # from the merged history so it always matches what was committed.
+          for attempt in 1 2 3; do
+            git add data/history.jsonl docs/
+            if git diff --staged --quiet; then
+              echo "No change in this refresh - nothing to deploy."
+              exit 0
+            fi
+            git commit -m "chore: refresh snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            if git push; then
+              echo "Deployed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - integrating remote and regenerating."
+            git fetch origin main
+            git merge -X ours --no-edit origin/main
+            python -m solreport --out docs --data data
+          done
+          echo "::error::Could not push the refreshed snapshot after 3 attempts."
+          exit 1
