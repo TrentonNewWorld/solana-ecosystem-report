@@ -122,7 +122,7 @@ project's dashboard, so there is no upstream layout change that can break it.
 
 The report is designed to need zero maintenance, in four layers:
 
-1. **Stateless collection.** A run depends on nothing but the four public
+1. **Stateless collection.** A run depends on nothing but the five public
    endpoints. No key to rotate, no account to keep alive, no database to
    provision, no paid tier to outgrow.
 2. **Append-only history.** Each run writes one compact JSON line to
