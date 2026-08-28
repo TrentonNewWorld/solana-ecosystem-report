@@ -118,20 +118,37 @@ The report is designed to need zero maintenance, in four layers:
 2. **Append-only history.** Each run writes one compact JSON line to
    `data/history.jsonl`. The file is the dataset — small enough to live in git,
    so the history travels with the repo and every past report is reproducible.
-3. **Scheduled refresh** (`.github/workflows/refresh.yml`). A cron runs every 6
-   hours — at `41 1,7,13,19 * * *`, four times a day: it runs the tests,
-   regenerates all three outputs, commits the new snapshot back to the repo so
-   the time series grows on its own, and publishes `docs/` to GitHub Pages.
-   Manual refresh is available from the Actions tab via `workflow_dispatch`.
+3. **Redundant scheduled refresh** (`.github/workflows/refresh.yml`). Twelve
+   cron windows a day, two hours apart, guaranteeing a refresh at least every 6
+   hours: it runs the tests, regenerates all three outputs, commits the new
+   snapshot back so the time series grows on its own, and publishes `docs/` to
+   GitHub Pages. Manual refresh is available any time from the Actions tab via
+   `workflow_dispatch`.
 
-   The odd minute and odd hour are deliberate, and worth stating because it is
-   the one part of "auto-updating" that quietly fails. GitHub's own docs warn
-   that the `schedule` event "can be delayed during periods of high load", and a
-   dropped run is never retried. Load peaks at the top of every hour and at
-   midnight UTC, which is exactly where the obvious `0 */6 * * *` puts you: that
-   schedule registered as active here and fired zero times across two
-   consecutive windows before it was moved off-peak. Anything relying on
-   GitHub cron should assume best-effort delivery and pick an unpopular minute.
+   The redundancy is the interesting part, and it is worth stating plainly
+   because it is the one place "auto-updating" quietly fails. GitHub's own docs
+   warn that the `schedule` event "can be delayed during periods of high load",
+   and a shed run is **never retried**. That is not theoretical here: a plain
+   `0 */6 * * *` on this repo registered as `state=active` and fired zero times
+   across two consecutive windows, which is exactly the failure mode that leaves
+   a dashboard advertising a cadence it does not keep.
+
+   Moving to a less popular minute helps but does not fix it, because one slot
+   per window is still a single point of failure. So the schedule is redundant
+   instead: `17 1,5,9,13,17,21` and `47 3,7,11,15,19,23`, on odd hours at two
+   decorrelated off-peak minutes, never on the hour and never at midnight UTC.
+   GitHub has to drop two consecutive attempts before the 6-hour promise is even
+   at risk. The extra runs cost nothing — public-repo minutes are free, and a
+   window where the data has not moved exits early without a commit.
+
+   **How to verify rather than trust it:** every page and both machine-readable
+   outputs carry the UTC timestamp of the run that produced them, and the run
+   history is public:
+
+   ```bash
+   gh api 'repos/<owner>/solana-ecosystem-report/actions/runs?event=schedule' --jq '.total_count'
+   ```
+
 4. **Self-monitoring.** `--fail-on-critical` exits 2 when a critical anomaly
    fires, so the same command that generates the report can be the alerting
    check in any cron or monitoring system.
@@ -139,7 +156,7 @@ The report is designed to need zero maintenance, in four layers:
 To run it somewhere other than GitHub Actions, the whole job is one cron line:
 
 ```cron
-41 1,7,13,19 * * * cd /srv/solreport && /usr/bin/python3 -m solreport --out /var/www/solana
+17 1,5,9,13,17,21 * * * cd /srv/solreport && /usr/bin/python3 -m solreport --out /var/www/solana
 ```
 
 ---

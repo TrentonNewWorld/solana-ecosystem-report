@@ -8,13 +8,21 @@ name: Refresh Solana report
 
 on:
   schedule:
-    # Every 6 hours, deliberately at :41 past an ODD hour rather than "0 */6 * * *".
-    # GitHub load-sheds scheduled runs and its own docs warn they "can be delayed
-    # during periods of high load" — the top of the hour, and midnight UTC most of
-    # all, are the worst slots, and dropped runs are simply never retried. The
-    # original on-the-hour schedule registered as active but fired zero times in
-    # two consecutive windows. An off-peak minute is the documented mitigation.
-    - cron: "41 1,7,13,19 * * *"
+    # DELIVERY IS BEST-EFFORT, SO THE SCHEDULE IS REDUNDANT BY DESIGN.
+    # GitHub's docs warn the `schedule` event "can be delayed during periods of
+    # high load", and a shed run is never retried. Observed here first-hand: a
+    # plain `0 */6 * * *` registered as state=active and fired ZERO times across
+    # two consecutive windows. A single slot per window is therefore a single
+    # point of failure no matter which minute you pick.
+    #
+    # The fix is redundancy, not a luckier minute: twelve windows a day, two
+    # hours apart, on odd hours at two decorrelated off-peak minutes (:17/:47)
+    # so no two attempts share a load pattern. The promise is "at least every 6
+    # hours" — that now survives GitHub dropping two consecutive attempts. Extra
+    # runs are free (public repo) and cheap (the job exits early when the
+    # snapshot is unchanged, so a quiet window costs one no-op, not a commit).
+    - cron: "17 1,5,9,13,17,21 * * *"
+    - cron: "47 3,7,11,15,19,23 * * *"
   workflow_dispatch:         # manual refresh button in the Actions tab
   push:
     branches: [main]
