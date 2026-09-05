@@ -1,21 +1,21 @@
 # Solana Ecosystem Report
 
-_Generated 2026-09-05T21:43:54Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-09-05T22:52:45Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-09-05T21:43:54Z` |
+| Snapshot | `2026-09-05T22:52:45Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 7.17s |
-| Snapshots in history | 99 |
+| Collection time | 7.62s |
+| Snapshots in history | 100 |
 | Anomalies flagged | 0 (0 critical) |
 
 ## At a glance
 
-- The network is processing **1,249 non-vote TPS** (3,384 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.315s**.
-- **677 active validators** (16 delinquent, holding 0.013% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
-- **SOL at $103.81** (+1.92% over 24h), market cap $60.77B.
-- **DeFi TVL $5.92B** (+0.79% 7d, +23.11% 30d), against $16.30B of stablecoins settled on Solana.
+- The network is processing **1,107 non-vote TPS** (3,242 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.315s**.
+- **676 active validators** (17 delinquent, holding 0.018% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
+- **SOL at $103.3** (+1.56% over 24h), market cap $60.48B.
+- **DeFi TVL $5.92B** (+0.86% 7d, +23.19% 30d), against $16.30B of stablecoins settled on Solana.
 - **$1.88B of DEX volume in 24h** across 121 protocols, generating $10.44M in fees.
 
 ## Anomalies
@@ -28,28 +28,28 @@ No anomalies detected. Every monitored metric is inside its absolute safety band
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.2.2 |
-| Current epoch | 1029 (22.45% complete) |
-| Slot | 96,981 of 432,000 in epoch |
-| Absolute slot | 444,624,981 |
-| Block height | 422,669,395 |
-| Lifetime transactions | 545,493,590,115 |
-| TPS (now / mean / peak) | 3,547 / 3,384 / 3,859 |
-| True TPS, non-vote (now / mean) | 1,425 / 1,249 |
-| Slot time (mean / worst) | 0.315s / 0.326s |
+| Current epoch | 1029 (25.48% complete) |
+| Slot | 110,087 of 432,000 in epoch |
+| Absolute slot | 444,638,087 |
+| Block height | 422,682,501 |
+| Lifetime transactions | 545,507,101,298 |
+| TPS (now / mean / peak) | 3,031 / 3,242 / 3,721 |
+| True TPS, non-vote (now / mean) | 931 / 1,107 |
+| Slot time (mean / worst) | 0.315s / 0.33s |
 
-Epoch 1029 has **335,019 slots remaining**, about **29h 18m** at the current slot time.
+Epoch 1029 has **321,913 slots remaining**, about **28h 10m** at the current slot time.
 
 ## Validator set
 
 | Metric | Value |
 |---|---|
-| Active / delinquent | 677 / 16 (2.31% delinquent) |
+| Active / delinquent | 676 / 17 (2.45% delinquent) |
 | Total stake | 439,248,820 SOL |
-| Delinquent stake | 58,702 SOL (0.013%) |
+| Delinquent stake | 79,000 SOL (0.018%) |
 | Nakamoto coefficient | 18 |
 | Top 1 / top 10 stake share | 3.97% / 24.26% |
-| Commission (mean / median) | 12.47% / 5% |
-| Zero-commission validators | 247 |
+| Commission (mean / median) | 12.49% / 5.0% |
+| Zero-commission validators | 246 |
 
 ### Top validators by stake
 
@@ -71,6 +71,7 @@ Epoch 1029 has **335,019 slots remaining**, about **29h 18m** at the current slo
 | Vote account | Stake (SOL) | Last vote slot |
 |---|---|---|
 | `xLabsqDpN9WHXEXSJXk1yhqh5H8BgcqiBP1CR6Mkjcb` | 28,567 | 443,788,373 |
+| `mrgn4t2JabSgvGnrCaHXMvz8ocr4F52scsxJnkQMQsQ` | 20,298 | 444,624,958 |
 | `prt1s9dMM15LdsUX9HugajzqPB5WVN8a2mw3frAiCfj` | 13,110 | 443,486,942 |
 | `FEjcS4JCTqitjzW4Zj3Va2ioZZKf7MqsCMnrrgGLSvjm` | 6,262 | 443,348,723 |
 | `8B2Z2R8dRvqFcXuLBwinu3Jq7HQidCaJCnDuRRqeJLC1` | 4,062 | 443,965,922 |
@@ -79,23 +80,22 @@ Epoch 1029 has **335,019 slots remaining**, about **29h 18m** at the current slo
 | `4GEEKSwzc242QKF1uzzodpFaxb4GShQEZhkZfeXd27Vi` | 1,344 | 443,438,639 |
 | `Fy6zNoZ1eCPpQX3JXeQ9Yd1HW1BFL8rrFmDvYYDnuxjT` | 193 | 442,800,351 |
 | `8sdFdnuKsY5KvpEU7gPi7qH1fP5DdYWfDhiF7NLjtaX8` | 176 | 442,758,837 |
-| `qjUuLxWo29QCBr7ZQw4EPLkAtmjHS2ZdZpZcH9g7fRb` | 148 | 442,800,457 |
 
 ## Economics
 
 | Metric | Value | Change |
 |---|---|---|
-| SOL price | $103.81 | +1.92% 24h ↑ |
-| Market cap | $60.77B | |
+| SOL price | $103.3 | +1.56% 24h ↑ |
+| Market cap | $60.48B | |
 | Spot volume 24h | $2.31B | |
-| DeFi TVL | $5.92B | -0.06% 1d / +0.79% 7d / +23.11% 30d |
+| DeFi TVL | $5.92B | +0.01% 1d / +0.86% 7d / +23.19% 30d |
 | TVL 90-day peak | $6.01B | |
 | Stablecoin supply (USD peg) | $16.30B | |
-| Stablecoin supply (all pegs) | $16.36B | |
+| Stablecoin supply (all pegs) | $16.37B | |
 | DEX volume 24h | $1.88B | -23.50% 1d |
 | DEX volume 7d / 30d | $14.90B / $65.12B | |
 | Fees + app revenue 24h | $10.44M | -11.71% 1d |
-| Circulating supply | 585,445,649 SOL (92.41% of total) |
+| Circulating supply | 585,445,613 SOL (92.41% of total) |
 
 ### DEX volume by protocol (24h)
 
@@ -104,8 +104,8 @@ Epoch 1029 has **335,019 slots remaining**, about **29h 18m** at the current slo
 | PumpSwap | $310.67M | 16.51% |
 | BisonFi | $251.95M | 13.39% |
 | Meteora DLMM | $180.66M | 9.60% |
-| Manifest Trade | $118.65M | 6.31% |
-| Raydium AMM | $116.92M | 6.21% |
+| Orca DEX | $126.18M | 6.71% |
+| Manifest Trade | $116.73M | 6.20% |
 
 ## Protocol roadmap
 
@@ -137,14 +137,14 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-09-05T21:43:54Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-09-05T22:52:45Z | Change |
 |---|---|---|---|
-| SOL price | $107 | $104 | -3.38% |
-| DeFi TVL | $5.94B | $5.92B | -0.48% |
-| Stablecoin supply | $15.97B | $16.30B | +2.02% |
+| SOL price | $107 | $103 | -3.85% |
+| DeFi TVL | $5.94B | $5.92B | -0.42% |
+| Stablecoin supply | $15.97B | $16.30B | +2.04% |
 | DEX volume 24h | $3.63B | $1.88B | -48.19% |
-| Mean TPS | 3,288 | 3,384 | +2.92% |
-| Active validators | 689 | 677 | -1.74% |
+| Mean TPS | 3,288 | 3,242 | -1.39% |
+| Active validators | 689 | 676 | -1.89% |
 | Nakamoto coefficient | 18 | 18 | +0.00% |
 
 ## Data sources
