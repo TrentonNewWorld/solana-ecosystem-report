@@ -1,21 +1,21 @@
 # Solana Ecosystem Report
 
-_Generated 2026-09-15T14:18:38Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-09-15T15:44:02Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-09-15T14:18:38Z` |
+| Snapshot | `2026-09-15T15:44:02Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 10.4s |
-| Snapshots in history | 185 |
+| Collection time | 8.84s |
+| Snapshots in history | 186 |
 | Anomalies flagged | 0 (0 critical) |
 
 ## At a glance
 
-- The network is processing **2,054 non-vote TPS** (4,184 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.316s**.
-- **676 active validators** (13 delinquent, holding 0.115% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
-- **SOL at $100.14** (-1.63% over 24h), market cap $58.80B.
-- **DeFi TVL $5.85B** (-1.25% 7d, +21.37% 30d), against $15.88B of stablecoins settled on Solana.
+- The network is processing **2,299 non-vote TPS** (4,427 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.316s**.
+- **678 active validators** (11 delinquent, holding 0.078% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
+- **SOL at $99.28** (-2.78% over 24h), market cap $58.30B.
+- **DeFi TVL $5.83B** (-1.51% 7d, +21.05% 30d), against $15.92B of stablecoins settled on Solana.
 - **$2.53B of DEX volume in 24h** across 123 protocols, generating $13.58M in fees.
 
 ## Anomalies
@@ -28,28 +28,28 @@ No anomalies detected. Every monitored metric is inside its absolute safety band
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.3.0-rc.0 |
-| Current epoch | 1035 (34.93% complete) |
-| Slot | 150,919 of 432,000 in epoch |
-| Absolute slot | 447,270,919 |
-| Block height | 425,312,779 |
-| Lifetime transactions | 548,712,523,647 |
-| TPS (now / mean / peak) | 3,945 / 4,184 / 5,256 |
-| True TPS, non-vote (now / mean) | 1,833 / 2,054 |
+| Current epoch | 1035 (38.68% complete) |
+| Slot | 167,116 of 432,000 in epoch |
+| Absolute slot | 447,287,116 |
+| Block height | 425,328,944 |
+| Lifetime transactions | 548,734,862,998 |
+| TPS (now / mean / peak) | 4,051 / 4,427 / 5,196 |
+| True TPS, non-vote (now / mean) | 1,928 / 2,299 |
 | Slot time (mean / worst) | 0.316s / 0.326s |
 
-Epoch 1035 has **281,081 slots remaining**, about **24h 40m** at the current slot time.
+Epoch 1035 has **264,884 slots remaining**, about **23h 15m** at the current slot time.
 
 ## Validator set
 
 | Metric | Value |
 |---|---|
-| Active / delinquent | 676 / 13 (1.89% delinquent) |
+| Active / delinquent | 678 / 11 (1.60% delinquent) |
 | Total stake | 439,248,639 SOL |
-| Delinquent stake | 505,321 SOL (0.115%) |
+| Delinquent stake | 344,676 SOL (0.078%) |
 | Nakamoto coefficient | 18 |
 | Top 1 / top 10 stake share | 4.04% / 24.32% |
-| Commission (mean / median) | 12.22% / 5.0% |
-| Zero-commission validators | 243 |
+| Commission (mean / median) | 12.33% / 5.0% |
+| Zero-commission validators | 244 |
 
 ### Top validators by stake
 
@@ -72,30 +72,30 @@ Epoch 1035 has **281,081 slots remaining**, about **24h 40m** at the current slo
 |---|---|---|
 | `GFWtwTkSkgc9RcAUkUxs7LyZ124DsBtcSnWGWwbrA113` | 184,385 | 447,255,932 |
 | `3r5ZXC1yFqMmk8VwDdUJbEdPmZ8KZvEkzd5ThEYRetTk` | 128,297 | 446,560,438 |
-| `3jkJVgfz1zrHSy6YLK6g96eTj49kCnDj2i8AbbKLZhkk` | 82,456 | 447,247,907 |
-| `ABREUtpzkkMiPHrBebpsYDU3mubtSohjDKZbyRoTJLae` | 78,190 | 447,270,212 |
 | `mrgn4t2JabSgvGnrCaHXMvz8ocr4F52scsxJnkQMQsQ` | 19,356 | 447,256,040 |
 | `AfyTzhTXBRBCxGdTEMc9LNEkVGVGfGA9wHf1VikaNb37` | 10,812 | 446,874,801 |
 | `BU5CXmHhXwZfSYwFjCjqAqdbu7MTUsiKLUj45RSXiPsE` | 1,512 | 447,044,285 |
 | `4GEEKSwzc242QKF1uzzodpFaxb4GShQEZhkZfeXd27Vi` | 197 | 445,809,612 |
 | `4BVYjw1ztUzUPsxsaCheWWwThT2X4rjogZytGnuWPUGg` | 100 | 446,995,996 |
 | `inQRWLtWjrZYz4z9xiPH9G8oMaGqKdeSeh7DUkGPVDL` | 14 | 445,699,097 |
+| `R1vAoSPFQdCc6wsAEMtxWXjqptSeN1YUiq2Zni1of21` | 2 | 384,048,870 |
+| `GdSJPrzj8q1QJV53s1cHMcpbPhodgB9kjG7X9kq8Z56r` | 1 | 446,256,027 |
 
 ## Economics
 
 | Metric | Value | Change |
 |---|---|---|
-| SOL price | $100.14 | -1.63% 24h ↓ |
-| Market cap | $58.80B | |
-| Spot volume 24h | $3.33B | |
-| DeFi TVL | $5.85B | +0.25% 1d / -1.25% 7d / +21.37% 30d |
+| SOL price | $99.28 | -2.78% 24h ↓ |
+| Market cap | $58.30B | |
+| Spot volume 24h | $3.50B | |
+| DeFi TVL | $5.83B | -0.01% 1d / -1.51% 7d / +21.05% 30d |
 | TVL 90-day peak | $6.03B | |
-| Stablecoin supply (USD peg) | $15.88B | |
-| Stablecoin supply (all pegs) | $15.95B | |
+| Stablecoin supply (USD peg) | $15.92B | |
+| Stablecoin supply (all pegs) | $15.99B | |
 | DEX volume 24h | $2.53B | +41.27% 1d |
 | DEX volume 7d / 30d | $18.20B / $76.86B | |
 | Fees + app revenue 24h | $13.58M | -3.25% 1d |
-| Circulating supply | 587,027,962 SOL (92.57% of total) |
+| Circulating supply | 587,027,904 SOL (92.57% of total) |
 
 ### DEX volume by protocol (24h)
 
@@ -103,7 +103,7 @@ Epoch 1035 has **281,081 slots remaining**, about **24h 40m** at the current slo
 |---|---|---|
 | PumpSwap | $445.38M | 17.60% |
 | BisonFi | $315.80M | 12.48% |
-| Raydium AMM | $240.21M | 9.49% |
+| Raydium AMM | $235.67M | 9.31% |
 | Meteora DLMM | $198.81M | 7.86% |
 | fomo Wallet | $191.98M | 7.59% |
 
@@ -137,14 +137,14 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-09-15T14:18:38Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-09-15T15:44:02Z | Change |
 |---|---|---|---|
-| SOL price | $107 | $100 | -6.79% |
-| DeFi TVL | $5.94B | $5.85B | -1.59% |
-| Stablecoin supply | $15.97B | $15.88B | -0.57% |
+| SOL price | $107 | $99 | -7.59% |
+| DeFi TVL | $5.94B | $5.83B | -1.84% |
+| Stablecoin supply | $15.97B | $15.92B | -0.31% |
 | DEX volume 24h | $3.63B | $2.53B | -30.34% |
-| Mean TPS | 3,288 | 4,184 | +27.26% |
-| Active validators | 689 | 676 | -1.89% |
+| Mean TPS | 3,288 | 4,427 | +34.65% |
+| Active validators | 689 | 678 | -1.60% |
 | Nakamoto coefficient | 18 | 18 | +0.00% |
 
 ## Data sources
