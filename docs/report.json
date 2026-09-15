@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-14T23:51:05Z",
+  "generated_at": "2026-09-15T01:55:11Z",
   "sources": {
     "solana_rpc": "https://api.mainnet-beta.solana.com",
     "coingecko": "https://api.coingecko.com/api/v3",
@@ -13,277 +13,282 @@
     "endpoint": "https://api.mainnet-beta.solana.com",
     "health": "ok",
     "epoch": {
-      "epoch": 1034,
-      "absolute_slot": 447106026,
-      "block_height": 425148356,
-      "slot_index": 418026,
+      "epoch": 1035,
+      "absolute_slot": 447129592,
+      "block_height": 425171821,
+      "slot_index": 9592,
       "slots_in_epoch": 432000,
-      "progress_pct": 96.77,
-      "transaction_count": 548522922771,
-      "skipped_slots_lifetime": 21957670
+      "progress_pct": 2.22,
+      "transaction_count": 548550745977,
+      "skipped_slots_lifetime": 21957771
     },
     "performance": {
       "samples": 60,
       "window_minutes": 60.0,
-      "tps_current": 3783.7,
-      "tps_mean": 3849.0,
-      "tps_max": 4282.7,
-      "tps_min": 3508.7,
-      "true_tps_current": 1607.9,
-      "true_tps_mean": 1709.4,
+      "tps_current": 3780.9,
+      "tps_mean": 3773.2,
+      "tps_max": 4204.7,
+      "tps_min": 3365.9,
+      "true_tps_current": 1609.4,
+      "true_tps_mean": 1655.9,
       "slot_time_mean_s": 0.316,
       "slot_time_max_s": 0.326,
       "tps_series": [
-        3917.9,
-        4022.0,
-        3904.8,
-        3977.8,
-        4079.5,
-        3825.7,
-        3931.5,
-        3877.8,
-        3849.1,
-        3945.6,
-        3904.9,
-        3654.7,
-        3962.6,
-        3701.4,
-        3685.2,
-        4252.2,
-        3794.9,
-        3850.6,
-        3862.6,
-        3747.8,
-        3742.9,
-        3602.9,
-        3794.7,
-        3820.0,
-        3783.8,
-        3882.5,
-        3599.1,
-        3677.3,
-        3868.0,
-        3636.8,
-        3889.3,
-        3839.4,
-        3960.8,
-        3844.4,
-        3731.5,
-        3781.6,
-        3910.9,
-        3949.5,
-        4114.9,
-        4282.7,
-        4054.8,
-        3831.0,
-        3883.9,
-        3897.8,
-        3907.7,
-        3742.5,
-        3762.8,
-        3757.7,
-        3808.5,
-        3707.6,
-        3747.0,
-        3700.1,
-        3972.6,
-        3766.7,
-        4155.2,
-        3795.4,
-        3832.7,
-        3859.8,
-        3508.7,
-        3783.7
+        3864.2,
+        3852.7,
+        3765.2,
+        3767.8,
+        3700.9,
+        3806.2,
+        3807.5,
+        4120.1,
+        3833.1,
+        3824.1,
+        3809.2,
+        3754.5,
+        3768.0,
+        3958.2,
+        3945.7,
+        3980.3,
+        4114.1,
+        3596.2,
+        3715.3,
+        3727.6,
+        3794.2,
+        3856.3,
+        3588.6,
+        3861.9,
+        3585.9,
+        3630.7,
+        3462.3,
+        3544.0,
+        3605.1,
+        3777.5,
+        3618.1,
+        3724.6,
+        3825.6,
+        3743.4,
+        3588.9,
+        3812.5,
+        3715.3,
+        3743.9,
+        3540.1,
+        3609.3,
+        3697.9,
+        3758.4,
+        3673.2,
+        3475.9,
+        3564.2,
+        3710.0,
+        3365.9,
+        3662.8,
+        3673.0,
+        3900.4,
+        3834.6,
+        4078.9,
+        4204.7,
+        3845.3,
+        4120.9,
+        4021.5,
+        4105.7,
+        3982.6,
+        3594.7,
+        3780.9
       ],
       "slot_time_series": [
         0.314,
-        0.312,
-        0.314,
-        0.314,
+        0.317,
         0.316,
         0.317,
+        0.309,
+        0.314,
+        0.316,
+        0.314,
+        0.314,
+        0.321,
+        0.324,
+        0.321,
+        0.314,
+        0.317,
+        0.321,
+        0.316,
+        0.317,
+        0.323,
+        0.312,
+        0.311,
+        0.323,
+        0.321,
+        0.312,
+        0.314,
+        0.323,
+        0.314,
         0.317,
         0.312,
-        0.312,
+        0.316,
+        0.316,
         0.326,
-        0.316,
-        0.317,
-        0.323,
-        0.309,
-        0.317,
-        0.319,
-        0.319,
-        0.317,
         0.312,
-        0.317,
         0.316,
-        0.319,
-        0.309,
         0.317,
-        0.314,
-        0.311,
-        0.314,
-        0.319,
-        0.323,
-        0.314,
-        0.317,
-        0.314,
-        0.316,
         0.321,
-        0.323,
-        0.312,
-        0.312,
-        0.323,
         0.321,
-        0.314,
-        0.314,
         0.312,
-        0.319,
-        0.311,
-        0.319,
-        0.311,
-        0.316,
-        0.309,
-        0.316,
-        0.311,
-        0.311,
-        0.316,
-        0.314,
-        0.311,
-        0.319,
+        0.312,
+        0.317,
+        0.312,
+        0.312,
+        0.312,
         0.311,
         0.317,
+        0.311,
+        0.311,
+        0.321,
+        0.319,
+        0.317,
+        0.316,
+        0.319,
+        0.316,
+        0.311,
+        0.321,
+        0.317,
+        0.323,
+        0.314,
         0.319,
         0.314,
-        0.311
+        0.312
       ]
     },
     "supply": {
-      "total_sol": 634017059.16,
-      "circulating_sol": 586892303.79,
-      "non_circulating_sol": 47124755.37,
+      "total_sol": 634111942.63,
+      "circulating_sol": 587028539.53,
+      "non_circulating_sol": 47083403.1,
       "circulating_pct": 92.57
     },
     "version": "4.3.0-rc.0",
-    "latest_blockhash_slot": 447106026
+    "latest_blockhash_slot": 447129592
   },
   "validators": {
     "ok": true,
-    "active_count": 679,
-    "delinquent_count": 11,
-    "total_count": 690,
-    "delinquent_pct": 1.59,
-    "active_stake_sol": 438579851.38,
-    "delinquent_stake_sol": 160515.71,
-    "delinquent_stake_pct": 0.037,
-    "total_stake_sol": 438740367.09,
-    "nakamoto_coefficient": 18,
-    "top1_stake_pct": 4.0,
-    "top10_stake_pct": 24.29,
-    "commission_mean": 12.78,
+    "active_count": 677,
+    "delinquent_count": 12,
+    "total_count": 689,
+    "delinquent_pct": 1.74,
+    "active_stake_sol": 431550963.12,
+    "delinquent_stake_sol": 7697676.08,
+    "delinquent_stake_pct": 1.752,
+    "total_stake_sol": 439248639.21,
+    "nakamoto_coefficient": 19,
+    "top1_stake_pct": 4.04,
+    "top10_stake_pct": 24.03,
+    "commission_mean": 12.35,
     "commission_median": 5,
-    "zero_commission_count": 242,
+    "zero_commission_count": 245,
     "top_validators": [
       {
         "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
         "node_pubkey": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
-        "stake_sol": 17568188.64,
-        "stake_pct": 4.004,
+        "stake_sol": 17757711.87,
+        "stake_pct": 4.043,
         "commission": 7,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
         "node_pubkey": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
-        "stake_sol": 16361599.42,
-        "stake_pct": 3.729,
+        "stake_sol": 16373376.88,
+        "stake_pct": 3.728,
         "commission": 0,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
         "node_pubkey": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
-        "stake_sol": 12501348.7,
-        "stake_pct": 2.849,
+        "stake_sol": 12492604.95,
+        "stake_pct": 2.844,
         "commission": 0,
-        "last_vote": 447106048
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
         "node_pubkey": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
-        "stake_sol": 11372390.6,
-        "stake_pct": 2.592,
+        "stake_sol": 11369566.14,
+        "stake_pct": 2.588,
         "commission": 5,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
         "node_pubkey": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
-        "stake_sol": 9619665.2,
-        "stake_pct": 2.193,
+        "stake_sol": 9669319.45,
+        "stake_pct": 2.201,
         "commission": 0,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
         "node_pubkey": "C8Bey3LKVJHVqN6xPTeW8WJfUgFQAeGNBpT4Rp99JP1k",
-        "stake_sol": 9252711.97,
-        "stake_pct": 2.109,
+        "stake_sol": 9256224.98,
+        "stake_pct": 2.107,
         "commission": 7,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
         "node_pubkey": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
-        "stake_sol": 9025174.9,
+        "stake_sol": 9035102.59,
         "stake_pct": 2.057,
         "commission": 10,
-        "last_vote": 447106049
-      },
-      {
-        "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
-        "node_pubkey": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
-        "stake_sol": 7367885.16,
-        "stake_pct": 1.679,
-        "commission": 7,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
         "node_pubkey": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
-        "stake_sol": 6943003.36,
-        "stake_pct": 1.582,
+        "stake_sol": 6944775.01,
+        "stake_pct": 1.581,
         "commission": 5,
-        "last_vote": 447106049
+        "last_vote": 447129611
       },
       {
         "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
         "node_pubkey": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
-        "stake_sol": 6552506.03,
-        "stake_pct": 1.493,
+        "stake_sol": 6553625.65,
+        "stake_pct": 1.492,
         "commission": 0,
-        "last_vote": 447106048
+        "last_vote": 447129611
+      },
+      {
+        "vote_pubkey": "HZKopZYvv8v6un2H6KUNVQCnK5zM9emKKezvqhTBSpEc",
+        "node_pubkey": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+        "stake_sol": 6112428.98,
+        "stake_pct": 1.392,
+        "commission": 100,
+        "last_vote": 447129611
       }
     ],
     "delinquent_validators": [
+      {
+        "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+        "stake_sol": 7372354.85,
+        "last_vote": 447127338
+      },
+      {
+        "vote_pubkey": "GFWtwTkSkgc9RcAUkUxs7LyZ124DsBtcSnWGWwbrA113",
+        "stake_sol": 184384.96,
+        "last_vote": 447107037
+      },
       {
         "vote_pubkey": "3r5ZXC1yFqMmk8VwDdUJbEdPmZ8KZvEkzd5ThEYRetTk",
         "stake_sol": 128296.72,
         "last_vote": 446560438
       },
       {
-        "vote_pubkey": "mrgn4t2JabSgvGnrCaHXMvz8ocr4F52scsxJnkQMQsQ",
-        "stake_sol": 19576.7,
-        "last_vote": 447039544
-      },
-      {
         "vote_pubkey": "AfyTzhTXBRBCxGdTEMc9LNEkVGVGfGA9wHf1VikaNb37",
-        "stake_sol": 10812.23,
+        "stake_sol": 10812.34,
         "last_vote": 446874801
       },
       {
         "vote_pubkey": "BU5CXmHhXwZfSYwFjCjqAqdbu7MTUsiKLUj45RSXiPsE",
-        "stake_sol": 1512.44,
+        "stake_sol": 1512.45,
         "last_vote": 447044285
       },
       {
@@ -293,7 +298,7 @@
       },
       {
         "vote_pubkey": "4BVYjw1ztUzUPsxsaCheWWwThT2X4rjogZytGnuWPUGg",
-        "stake_sol": 99.63,
+        "stake_sol": 99.64,
         "last_vote": 446995996
       },
       {
@@ -302,14 +307,9 @@
         "last_vote": 445699097
       },
       {
-        "vote_pubkey": "sTach38ebT8jnGH8i2D1g8NDAS6An19whVMnSSWPXt4",
-        "stake_sol": 3.0,
-        "last_vote": 429535683
-      },
-      {
-        "vote_pubkey": "9HgX6hTfHSW2KcmopricBPVsS1pTGTEoFZji65D2yDUX",
-        "stake_sol": 2.0,
-        "last_vote": 0
+        "vote_pubkey": "R1vAoSPFQdCc6wsAEMtxWXjqptSeN1YUiq2Zni1of21",
+        "stake_sol": 1.63,
+        "last_vote": 384048870
       },
       {
         "vote_pubkey": "GdSJPrzj8q1QJV53s1cHMcpbPhodgB9kjG7X9kq8Z56r",
@@ -320,438 +320,446 @@
   },
   "market": {
     "ok": true,
-    "price_usd": 102.54,
-    "market_cap_usd": 60177676724.822815,
-    "volume_24h_usd": 3416172660.399224,
-    "change_24h_pct": 3.09
+    "price_usd": 102.32,
+    "market_cap_usd": 60073402423.42797,
+    "volume_24h_usd": 3386255118.3210535,
+    "change_24h_pct": 2.65
   },
   "tvl": {
     "ok": true,
-    "tvl_usd": 5965240126,
-    "change_1d_pct": 0.99,
-    "change_7d_pct": -0.67,
-    "change_30d_pct": 23.55,
-    "peak_90d_usd": 6026083950,
+    "tvl_usd": 5932952092,
+    "change_1d_pct": 0.11,
+    "change_7d_pct": 0.15,
+    "change_30d_pct": 23.08,
+    "peak_90d_usd": 6026083603,
     "series": [
       {
-        "date": 1781654400,
-        "tvl": 4938533696
-      },
-      {
         "date": 1781740800,
-        "tvl": 4822651384
+        "tvl": 4822651037
       },
       {
         "date": 1781827200,
-        "tvl": 4792238285
+        "tvl": 4792237938
       },
       {
         "date": 1781913600,
-        "tvl": 4786615748
+        "tvl": 4786615401
       },
       {
         "date": 1782000000,
-        "tvl": 4923526047
+        "tvl": 4923525700
       },
       {
         "date": 1782086400,
-        "tvl": 4923907880
+        "tvl": 4923907533
       },
       {
         "date": 1782172800,
-        "tvl": 4855775020
+        "tvl": 4855774673
       },
       {
         "date": 1782259200,
-        "tvl": 4803850785
+        "tvl": 4803850438
       },
       {
         "date": 1782345600,
-        "tvl": 4721537803
+        "tvl": 4721537456
       },
       {
         "date": 1782432000,
-        "tvl": 4671430620
+        "tvl": 4671430273
       },
       {
         "date": 1782518400,
-        "tvl": 4840212216
+        "tvl": 4840211870
       },
       {
         "date": 1782604800,
-        "tvl": 4766479329
+        "tvl": 4766478982
       },
       {
         "date": 1782691200,
-        "tvl": 4829733791
+        "tvl": 4829733444
       },
       {
         "date": 1782777600,
-        "tvl": 4917803915
+        "tvl": 4917803568
       },
       {
         "date": 1782864000,
-        "tvl": 4793657171
+        "tvl": 4793656824
       },
       {
         "date": 1782950400,
-        "tvl": 4929954467
+        "tvl": 4929954120
       },
       {
         "date": 1783036800,
-        "tvl": 5060343110
+        "tvl": 5060342763
       },
       {
         "date": 1783123200,
-        "tvl": 5138277094
+        "tvl": 5138276747
       },
       {
         "date": 1783209600,
-        "tvl": 5133597162
+        "tvl": 5133596815
       },
       {
         "date": 1783296000,
-        "tvl": 5126268270
+        "tvl": 5126267923
       },
       {
         "date": 1783382400,
-        "tvl": 5156379116
+        "tvl": 5156378770
       },
       {
         "date": 1783468800,
-        "tvl": 5024984007
+        "tvl": 5024983660
       },
       {
         "date": 1783555200,
-        "tvl": 4957693570
+        "tvl": 4957693223
       },
       {
         "date": 1783641600,
-        "tvl": 4976569574
+        "tvl": 4976569227
       },
       {
         "date": 1783728000,
-        "tvl": 4948238774
+        "tvl": 4948238428
       },
       {
         "date": 1783814400,
-        "tvl": 4863543455
+        "tvl": 4863543108
       },
       {
         "date": 1783900800,
-        "tvl": 4863286361
+        "tvl": 4863286014
       },
       {
         "date": 1783987200,
-        "tvl": 4818339457
+        "tvl": 4818339111
       },
       {
         "date": 1784073600,
-        "tvl": 4930345010
+        "tvl": 4930344663
       },
       {
         "date": 1784160000,
-        "tvl": 4936804350
+        "tvl": 4936804004
       },
       {
         "date": 1784246400,
-        "tvl": 4856518299
+        "tvl": 4856517952
       },
       {
         "date": 1784332800,
-        "tvl": 4834304887
+        "tvl": 4834304540
       },
       {
         "date": 1784419200,
-        "tvl": 4879057916
+        "tvl": 4879057569
       },
       {
         "date": 1784505600,
-        "tvl": 4882071565
+        "tvl": 4882071218
       },
       {
         "date": 1784592000,
-        "tvl": 4984519857
+        "tvl": 4984519510
       },
       {
         "date": 1784678400,
-        "tvl": 5004368279
+        "tvl": 5004367932
       },
       {
         "date": 1784764800,
-        "tvl": 4981247636
+        "tvl": 4981247289
       },
       {
         "date": 1784851200,
-        "tvl": 4937529004
+        "tvl": 4937528657
       },
       {
         "date": 1784937600,
-        "tvl": 4802553954
+        "tvl": 4802553607
       },
       {
         "date": 1785024000,
-        "tvl": 4853093736
+        "tvl": 4853093390
       },
       {
         "date": 1785110400,
-        "tvl": 4932372353
+        "tvl": 4932372006
       },
       {
         "date": 1785196800,
-        "tvl": 4828961964
+        "tvl": 4828961617
       },
       {
         "date": 1785283200,
-        "tvl": 4804550825
+        "tvl": 4804550479
       },
       {
         "date": 1785369600,
-        "tvl": 4808285746
+        "tvl": 4808285399
       },
       {
         "date": 1785456000,
-        "tvl": 4838575761
+        "tvl": 4838575414
       },
       {
         "date": 1785542400,
-        "tvl": 4761615211
+        "tvl": 4761614864
       },
       {
         "date": 1785628800,
-        "tvl": 4730125373
+        "tvl": 4730125026
       },
       {
         "date": 1785715200,
-        "tvl": 4753658383
+        "tvl": 4753658036
       },
       {
         "date": 1785801600,
-        "tvl": 4776173811
+        "tvl": 4776173464
       },
       {
         "date": 1785888000,
-        "tvl": 4816655973
+        "tvl": 4816655626
       },
       {
         "date": 1785974400,
-        "tvl": 4816869630
+        "tvl": 4816869283
       },
       {
         "date": 1786060800,
-        "tvl": 4733713679
+        "tvl": 4733713332
       },
       {
         "date": 1786147200,
-        "tvl": 4760384525
+        "tvl": 4760384178
       },
       {
         "date": 1786233600,
-        "tvl": 4819775094
+        "tvl": 4819774747
       },
       {
         "date": 1786320000,
-        "tvl": 4865505635
+        "tvl": 4865505288
       },
       {
         "date": 1786406400,
-        "tvl": 4850704380
+        "tvl": 4850704033
       },
       {
         "date": 1786492800,
-        "tvl": 4874883858
+        "tvl": 4874883511
       },
       {
         "date": 1786579200,
-        "tvl": 4834726388
+        "tvl": 4834726041
       },
       {
         "date": 1786665600,
-        "tvl": 4848722882
+        "tvl": 4848722535
       },
       {
         "date": 1786752000,
-        "tvl": 4828261198
+        "tvl": 4828260851
       },
       {
         "date": 1786838400,
-        "tvl": 4820393272
+        "tvl": 4820392925
       },
       {
         "date": 1786924800,
-        "tvl": 4788574718
+        "tvl": 4788574371
       },
       {
         "date": 1787011200,
-        "tvl": 4861288697
+        "tvl": 4861288351
       },
       {
         "date": 1787097600,
-        "tvl": 4908451913
+        "tvl": 4908451567
       },
       {
         "date": 1787184000,
-        "tvl": 5238108757
+        "tvl": 5238108410
       },
       {
         "date": 1787270400,
-        "tvl": 5344199113
+        "tvl": 5344198767
       },
       {
         "date": 1787356800,
-        "tvl": 5564325266
+        "tvl": 5564324919
       },
       {
         "date": 1787443200,
-        "tvl": 5570066316
+        "tvl": 5570065969
       },
       {
         "date": 1787529600,
-        "tvl": 5573960798
+        "tvl": 5573960451
       },
       {
         "date": 1787616000,
-        "tvl": 5749915478
+        "tvl": 5749915131
       },
       {
         "date": 1787702400,
-        "tvl": 5619007799
+        "tvl": 5619007452
       },
       {
         "date": 1787788800,
-        "tvl": 5786523392
+        "tvl": 5786523045
       },
       {
         "date": 1787875200,
-        "tvl": 6026083950
+        "tvl": 6026083603
       },
       {
         "date": 1787961600,
-        "tvl": 5882475309
+        "tvl": 5882474955
       },
       {
         "date": 1788048000,
-        "tvl": 5923984993
+        "tvl": 5923984640
       },
       {
         "date": 1788134400,
-        "tvl": 5800415126
+        "tvl": 5800414773
       },
       {
         "date": 1788220800,
-        "tvl": 5997312660
+        "tvl": 5997312306
       },
       {
         "date": 1788307200,
-        "tvl": 5660443939
+        "tvl": 5660443585
       },
       {
         "date": 1788393600,
-        "tvl": 5713724583
+        "tvl": 5713724229
       },
       {
         "date": 1788480000,
-        "tvl": 5931956542
+        "tvl": 5931956188
       },
       {
         "date": 1788566400,
-        "tvl": 5872166893
+        "tvl": 5872166539
       },
       {
         "date": 1788652800,
-        "tvl": 5919221192
+        "tvl": 5919220838
       },
       {
         "date": 1788739200,
-        "tvl": 6005631908
+        "tvl": 6005631554
       },
       {
         "date": 1788825600,
-        "tvl": 5924360429
+        "tvl": 5924360075
       },
       {
         "date": 1788912000,
-        "tvl": 5954413110
+        "tvl": 5954412757
       },
       {
         "date": 1788998400,
-        "tvl": 5857036323
+        "tvl": 5857035969
       },
       {
         "date": 1789084800,
-        "tvl": 5751314645
+        "tvl": 5751314292
       },
       {
         "date": 1789171200,
-        "tvl": 5899902271
+        "tvl": 5899901918
       },
       {
         "date": 1789257600,
-        "tvl": 5906911750
+        "tvl": 5906911397
       },
       {
         "date": 1789344000,
-        "tvl": 5965240126
+        "tvl": 5926404386
+      },
+      {
+        "date": 1789430400,
+        "tvl": 5932952092
       }
     ]
   },
   "stablecoins": {
     "ok": true,
-    "usd_pegged": 16043574236.11,
-    "all_pegs_usd": 16106630321.12,
+    "usd_pegged": 16013931832.56,
+    "all_pegs_usd": 16076961222.26,
     "by_peg": {
-      "peggedUSD": 16043574236.11,
-      "peggedEUR": 58308845.16,
-      "peggedJPY": 53.2,
-      "peggedCHF": 1266371.36,
-      "peggedAUD": 74921.23,
-      "peggedVAR": 2433880.56,
-      "peggedGBP": 804701.04,
+      "peggedUSD": 16013931832.56,
+      "peggedEUR": 58297897.76,
+      "peggedJPY": 53.09,
+      "peggedCHF": 1265287.02,
+      "peggedAUD": 74922.18,
+      "peggedVAR": 2419171.12,
+      "peggedGBP": 804744.26,
       "peggedTRY": 165855.55,
-      "peggedCAD": 1456.22
+      "peggedCAD": 1458.02
     }
   },
   "dex": {
     "ok": true,
-    "volume_24h_usd": 1790994711.97,
-    "volume_7d_usd": 18462196801.12,
-    "volume_30d_usd": 75516262199.51,
-    "change_1d_pct": 2.72,
-    "change_7d_pct": -39.77,
+    "volume_24h_usd": 2196247156.8500004,
+    "volume_7d_usd": 17121107344.309998,
+    "volume_30d_usd": 75771624308.31999,
+    "change_1d_pct": 22.63,
+    "change_7d_pct": -21.22,
     "protocol_count": 123,
     "top_protocols": [
       {
-        "name": "Raydium AMM",
-        "volume_24h_usd": 321409821
+        "name": "PumpSwap",
+        "volume_24h_usd": 445379724
       },
       {
-        "name": "PumpSwap",
-        "volume_24h_usd": 315699458
+        "name": "Raydium AMM",
+        "volume_24h_usd": 321955135
       },
       {
         "name": "BisonFi",
         "volume_24h_usd": 201483703
       },
       {
-        "name": "Orca DEX",
-        "volume_24h_usd": 176708829
+        "name": "Meteora DLMM",
+        "volume_24h_usd": 198814364
       },
       {
-        "name": "fomo Wallet",
-        "volume_24h_usd": 166804335
+        "name": "Orca DEX",
+        "volume_24h_usd": 172428810
       }
     ]
   },
   "fees": {
     "ok": true,
-    "fees_24h_usd": 14036101.640000002,
-    "fees_7d_usd": 108311729.50000004,
-    "fees_30d_usd": 389543253.3899999,
-    "change_1d_pct": 3.22
+    "fees_24h_usd": 14419679.63,
+    "fees_7d_usd": 96033475.46000002,
+    "fees_30d_usd": 384863394.46000004,
+    "change_1d_pct": 2.73
   },
   "upgrades": {
     "ok": true,
     "simds": [
+      {
+        "number": 582,
+        "title": "SIMD-0582: Early detection of instruction trace overflow",
+        "simd": 582,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/582",
+        "updated_at": "2026-09-15T00:09:36Z",
+        "draft": false
+      },
       {
         "number": 639,
         "title": "SIMD-0377: fix JMP32 register opcodes, JSGE32 condition and callx opcode",
@@ -807,14 +815,6 @@
         "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/610",
         "updated_at": "2026-09-11T19:13:13Z",
         "draft": false
-      },
-      {
-        "number": 609,
-        "title": "SIMD-0609: Prohibit Vote Account Self-Withdrawals",
-        "simd": 609,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/609",
-        "updated_at": "2026-09-11T19:03:54Z",
-        "draft": false
       }
     ],
     "releases": [
@@ -862,8 +862,18 @@
       }
     ]
   },
-  "collection_seconds": 9.2,
+  "collection_seconds": 7.88,
   "sources_ok": 8,
   "sources_total": 8,
-  "anomalies": []
+  "anomalies": [
+    {
+      "severity": "critical",
+      "code": "zscore_delinquent_stake_pct",
+      "metric": "Delinquent stake",
+      "value": 1.752,
+      "expected": "0.032% +/- 0.033% (median of last 181)",
+      "message": "Delinquent stake is 1.752%, 52.7 robust standard deviations above its recent median of 0.032% (+5375.0%).",
+      "z_score": 52.73
+    }
+  ]
 }
