@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T15:39:52Z",
+  "generated_at": "2026-09-17T19:18:50Z",
   "sources": {
     "solana_rpc": "https://api.mainnet-beta.solana.com",
     "coingecko": "https://api.coingecko.com/api/v3",
@@ -14,158 +14,158 @@
     "health": "ok",
     "epoch": {
       "epoch": 1036,
-      "absolute_slot": 447831451,
-      "block_height": 425872607,
-      "slot_index": 279451,
+      "absolute_slot": 447872852,
+      "block_height": 425913984,
+      "slot_index": 320852,
       "slots_in_epoch": 432000,
-      "progress_pct": 64.69,
-      "transaction_count": 549458772650,
-      "skipped_slots_lifetime": 21958844
+      "progress_pct": 74.27,
+      "transaction_count": 549519138456,
+      "skipped_slots_lifetime": 21958868
     },
     "performance": {
       "samples": 60,
       "window_minutes": 60.0,
-      "tps_current": 4499.2,
-      "tps_mean": 4677.2,
-      "tps_max": 5255.6,
-      "tps_min": 4125.2,
-      "true_tps_current": 2351.2,
-      "true_tps_mean": 2551.9,
+      "tps_current": 4708.4,
+      "tps_mean": 4358.8,
+      "tps_max": 5196.2,
+      "tps_min": 3755.6,
+      "true_tps_current": 2554.6,
+      "true_tps_mean": 2232.5,
       "slot_time_mean_s": 0.317,
-      "slot_time_max_s": 0.33,
+      "slot_time_max_s": 0.326,
       "tps_series": [
-        4590.4,
-        4613.8,
-        4739.6,
-        4723.2,
-        4936.9,
-        5167.2,
-        5242.0,
-        5180.0,
-        5231.1,
-        5105.9,
-        5028.4,
-        4826.0,
-        4863.5,
-        4931.0,
-        4664.4,
-        4347.2,
-        4370.1,
-        4170.3,
-        4454.7,
-        4419.6,
-        4467.3,
-        4674.6,
-        4638.0,
-        4522.8,
-        4498.2,
-        4276.8,
-        4564.6,
-        4776.1,
-        4178.1,
-        4127.8,
-        4374.7,
-        4125.2,
-        4220.2,
-        4316.7,
-        4436.2,
-        4375.7,
-        5055.6,
-        4774.9,
-        4601.2,
-        4443.0,
-        4535.9,
-        4342.4,
-        4590.0,
-        4487.9,
-        4482.6,
-        4608.1,
-        4486.7,
-        4512.1,
-        4825.7,
-        4679.2,
-        4957.9,
-        5200.5,
-        4819.0,
-        5250.9,
-        5246.8,
-        5255.6,
-        5012.4,
-        4857.1,
-        4930.4,
-        4499.2
+        3755.6,
+        4517.5,
+        4411.3,
+        4383.7,
+        4358.7,
+        4268.2,
+        4329.7,
+        4139.1,
+        3993.6,
+        4110.9,
+        3953.1,
+        4105.4,
+        4072.1,
+        3842.2,
+        4131.9,
+        4132.0,
+        4635.3,
+        4401.3,
+        4390.6,
+        4166.0,
+        4177.5,
+        4885.8,
+        4166.2,
+        4177.9,
+        4171.5,
+        4230.4,
+        4462.5,
+        4382.1,
+        4501.9,
+        4343.3,
+        4843.9,
+        4593.8,
+        4377.5,
+        4323.4,
+        4420.7,
+        4339.6,
+        4319.4,
+        4233.8,
+        4281.6,
+        3989.2,
+        4012.4,
+        4110.1,
+        4126.6,
+        3972.2,
+        4289.6,
+        4353.8,
+        4139.6,
+        4475.4,
+        4203.1,
+        4265.8,
+        4124.8,
+        4420.7,
+        5172.7,
+        5064.4,
+        5196.2,
+        5130.0,
+        4969.1,
+        4728.4,
+        4744.6,
+        4708.4
       ],
       "slot_time_series": [
-        0.319,
+        0.323,
+        0.321,
         0.324,
+        0.309,
+        0.314,
+        0.316,
+        0.314,
+        0.316,
+        0.316,
         0.311,
+        0.317,
+        0.314,
+        0.314,
+        0.319,
+        0.317,
+        0.323,
+        0.316,
+        0.321,
+        0.324,
+        0.317,
+        0.324,
+        0.312,
+        0.319,
+        0.316,
+        0.321,
+        0.314,
+        0.316,
+        0.316,
+        0.319,
+        0.317,
+        0.317,
+        0.317,
+        0.317,
+        0.316,
+        0.314,
+        0.317,
+        0.319,
+        0.323,
+        0.321,
+        0.312,
+        0.319,
+        0.316,
+        0.314,
+        0.316,
+        0.317,
+        0.319,
+        0.316,
+        0.316,
+        0.314,
+        0.314,
+        0.319,
+        0.319,
         0.326,
-        0.319,
-        0.314,
+        0.312,
         0.323,
         0.321,
-        0.323,
-        0.312,
-        0.33,
-        0.317,
-        0.316,
-        0.324,
-        0.312,
-        0.321,
-        0.312,
-        0.316,
-        0.317,
-        0.312,
         0.314,
-        0.316,
-        0.316,
+        0.317,
         0.319,
-        0.316,
-        0.314,
-        0.321,
-        0.319,
-        0.311,
-        0.319,
-        0.316,
-        0.316,
-        0.317,
-        0.314,
-        0.314,
-        0.314,
-        0.316,
-        0.319,
-        0.314,
-        0.314,
-        0.314,
-        0.328,
-        0.321,
-        0.319,
-        0.316,
-        0.317,
-        0.312,
-        0.317,
-        0.314,
-        0.317,
-        0.317,
-        0.312,
-        0.316,
-        0.314,
-        0.319,
-        0.323,
-        0.311,
-        0.316,
-        0.314,
-        0.314
+        0.312
       ]
     },
     "supply": {
-      "total_sol": 634204474.94,
-      "circulating_sol": 587212048.26,
-      "non_circulating_sol": 46992426.68,
+      "total_sol": 634204316.35,
+      "circulating_sol": 587211889.04,
+      "non_circulating_sol": 46992427.31,
       "circulating_pct": 92.59
     },
     "version": "4.3.0-rc.0",
-    "latest_blockhash_slot": 447831451
+    "latest_blockhash_slot": 447872851
   },
   "validators": {
     "ok": true,
@@ -173,16 +173,16 @@
     "delinquent_count": 12,
     "total_count": 690,
     "delinquent_pct": 1.74,
-    "active_stake_sol": 439604688.04,
-    "delinquent_stake_sol": 156394.7,
-    "delinquent_stake_pct": 0.036,
+    "active_stake_sol": 439586714.59,
+    "delinquent_stake_sol": 174368.16,
+    "delinquent_stake_pct": 0.04,
     "total_stake_sol": 439761082.74,
     "nakamoto_coefficient": 18,
     "top1_stake_pct": 4.04,
     "top10_stake_pct": 24.34,
-    "commission_mean": 12.5,
+    "commission_mean": 12.64,
     "commission_median": 5.0,
-    "zero_commission_count": 242,
+    "zero_commission_count": 241,
     "top_validators": [
       {
         "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
@@ -190,7 +190,7 @@
         "stake_sol": 17767427.7,
         "stake_pct": 4.04,
         "commission": 7,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
@@ -198,7 +198,7 @@
         "stake_sol": 16352114.4,
         "stake_pct": 3.718,
         "commission": 0,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
@@ -206,7 +206,7 @@
         "stake_sol": 12485145.26,
         "stake_pct": 2.839,
         "commission": 0,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
@@ -214,7 +214,7 @@
         "stake_sol": 11383246.87,
         "stake_pct": 2.589,
         "commission": 5,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
@@ -222,7 +222,7 @@
         "stake_sol": 9740877.34,
         "stake_pct": 2.215,
         "commission": 0,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
@@ -230,7 +230,7 @@
         "stake_sol": 9256273.09,
         "stake_pct": 2.105,
         "commission": 7,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
@@ -238,7 +238,7 @@
         "stake_sol": 9049051.49,
         "stake_pct": 2.058,
         "commission": 10,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
@@ -246,7 +246,7 @@
         "stake_sol": 7386183.49,
         "stake_pct": 1.68,
         "commission": 7,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
@@ -254,7 +254,7 @@
         "stake_sol": 7076306.41,
         "stake_pct": 1.609,
         "commission": 5,
-        "last_vote": 447831467
+        "last_vote": 447872870
       },
       {
         "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
@@ -262,7 +262,7 @@
         "stake_sol": 6558592.36,
         "stake_pct": 1.491,
         "commission": 0,
-        "last_vote": 447831467
+        "last_vote": 447872870
       }
     ],
     "delinquent_validators": [
@@ -270,6 +270,11 @@
         "vote_pubkey": "3r5ZXC1yFqMmk8VwDdUJbEdPmZ8KZvEkzd5ThEYRetTk",
         "stake_sol": 128296.72,
         "last_vote": 446560438
+      },
+      {
+        "vote_pubkey": "dzufrE42PJjNNRBstdmunAdeDToDA3Cax6WDpFVj36Y",
+        "stake_sol": 18032.6,
+        "last_vote": 447861091
       },
       {
         "vote_pubkey": "6XiVWAyRpG7wGUQPVRd2XrYdgQVQyoQamd2J8XAmate",
@@ -282,14 +287,9 @@
         "last_vote": 447820275
       },
       {
-        "vote_pubkey": "BU5CXmHhXwZfSYwFjCjqAqdbu7MTUsiKLUj45RSXiPsE",
-        "stake_sol": 1512.45,
-        "last_vote": 447044285
-      },
-      {
-        "vote_pubkey": "DHoZJqvvMGvAXw85Lmsob7YwQzFVisYg8HY4rt5BAj6M",
-        "stake_sol": 807.47,
-        "last_vote": 447790536
+        "vote_pubkey": "mrgn4t2JabSgvGnrCaHXMvz8ocr4F52scsxJnkQMQsQ",
+        "stake_sol": 2260.78,
+        "last_vote": 447868279
       },
       {
         "vote_pubkey": "4GEEKSwzc242QKF1uzzodpFaxb4GShQEZhkZfeXd27Vi",
@@ -320,17 +320,17 @@
   },
   "market": {
     "ok": true,
-    "price_usd": 100.85,
-    "market_cap_usd": 59208511130.55724,
-    "volume_24h_usd": 3818880094.148325,
-    "change_24h_pct": 3.86
+    "price_usd": 100.71,
+    "market_cap_usd": 59142424694.604454,
+    "volume_24h_usd": 3366173973.0143647,
+    "change_24h_pct": 2.97
   },
   "tvl": {
     "ok": true,
-    "tvl_usd": 5852515055,
-    "change_1d_pct": 2.23,
-    "change_7d_pct": -0.08,
-    "change_30d_pct": 20.39,
+    "tvl_usd": 5860494584,
+    "change_1d_pct": 2.37,
+    "change_7d_pct": 0.06,
+    "change_30d_pct": 20.55,
     "peak_90d_usd": 6026083603,
     "series": [
       {
@@ -691,24 +691,24 @@
       },
       {
         "date": 1789603200,
-        "tvl": 5852515055
+        "tvl": 5860494584
       }
     ]
   },
   "stablecoins": {
     "ok": true,
-    "usd_pegged": 15295493410.56,
-    "all_pegs_usd": 15361296258.79,
+    "usd_pegged": 16301491717.46,
+    "all_pegs_usd": 16369491632.2,
     "by_peg": {
-      "peggedUSD": 15295493410.56,
-      "peggedEUR": 61509308.04,
-      "peggedJPY": 53.52,
-      "peggedCHF": 1284996.74,
-      "peggedAUD": 74900.0,
-      "peggedVAR": 2441384.34,
-      "peggedGBP": 325067.82,
+      "peggedUSD": 16301491717.46,
+      "peggedEUR": 63693005.11,
+      "peggedJPY": 53.56,
+      "peggedCHF": 1293599.43,
+      "peggedAUD": 74872.29,
+      "peggedVAR": 2426510.88,
+      "peggedGBP": 344735.8,
       "peggedTRY": 165683.51,
-      "peggedCAD": 1453.55
+      "peggedCAD": 1453.46
     }
   },
   "dex": {
@@ -734,11 +734,11 @@
       },
       {
         "name": "Orca DEX",
-        "volume_24h_usd": 284252197
+        "volume_24h_usd": 300140083
       },
       {
         "name": "Raydium AMM",
-        "volume_24h_usd": 236689656
+        "volume_24h_usd": 251471602
       }
     ]
   },
@@ -753,20 +753,20 @@
     "ok": true,
     "simds": [
       {
+        "number": 645,
+        "title": "SIMD-0645: SVM JIT intrinsics sol_multi3",
+        "simd": 645,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/645",
+        "updated_at": "2026-09-17T17:29:03Z",
+        "draft": false
+      },
+      {
         "number": 643,
         "title": "SIMD-0643: Move fee burn rounding from per slot to per transaction",
         "simd": 643,
         "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/643",
         "updated_at": "2026-09-17T15:36:43Z",
         "draft": true
-      },
-      {
-        "number": 645,
-        "title": "SIMD-0645: SVM JIT intrinsics sol_multi3",
-        "simd": 645,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/645",
-        "updated_at": "2026-09-17T14:51:02Z",
-        "draft": false
       },
       {
         "number": 644,
@@ -862,7 +862,7 @@
       }
     ]
   },
-  "collection_seconds": 9.17,
+  "collection_seconds": 8.92,
   "sources_ok": 8,
   "sources_total": 8,
   "anomalies": []
