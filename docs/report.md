@@ -1,26 +1,28 @@
 # Solana Ecosystem Report
 
-_Generated 2026-09-20T13:34:05Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-09-20T14:53:20Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-09-20T13:34:05Z` |
+| Snapshot | `2026-09-20T14:53:20Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 7.89s |
-| Snapshots in history | 231 |
-| Anomalies flagged | 0 (0 critical) |
+| Collection time | 8.7s |
+| Snapshots in history | 232 |
+| Anomalies flagged | 1 (0 critical) |
 
 ## At a glance
 
-- The network is processing **1,367 non-vote TPS** (3,908 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.266s**.
-- **678 active validators** (12 delinquent, holding 0.007% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
-- **SOL at $108.16** (-2.99% over 24h), market cap $63.53B.
-- **DeFi TVL $6.11B** (+3.47% 7d, +14.36% 30d), against $16.45B of stablecoins settled on Solana.
-- **$2.88B of DEX volume in 24h** across 124 protocols, generating $15.17M in fees.
+- The network is processing **1,593 non-vote TPS** (4,126 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.267s**.
+- **677 active validators** (13 delinquent, holding 0.007% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
+- **SOL at $108.26** (-3.09% over 24h), market cap $63.60B.
+- **DeFi TVL $6.12B** (+3.59% 7d, +14.50% 30d), against $15.45B of stablecoins settled on Solana.
+- **$2.88B of DEX volume in 24h** across 124 protocols, generating $15.28M in fees.
 
 ## Anomalies
 
-No anomalies detected. Every monitored metric is inside its absolute safety band and within normal variance of its recent median.
+| Severity | Metric | Observed | Expected | What it means |
+|---|---|---|---|---|
+| 🟠 warning | DeFi TVL | 6118888792 | $5,894,911,528 +/- $73,683,751 (median of last 231) | DeFi TVL is $6,118,888,792, 3.0 robust standard deviations above its recent median of $5,894,911,528 (+3.8%). |
 
 ## Network performance
 
@@ -28,28 +30,28 @@ No anomalies detected. Every monitored metric is inside its absolute safety band
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.3.0-rc.0 |
-| Current epoch | 1038 (76.49% complete) |
-| Slot | 330,436 of 432,000 in epoch |
-| Absolute slot | 448,746,436 |
-| Block height | 426,787,158 |
-| Lifetime transactions | 550,554,799,937 |
-| TPS (now / mean / peak) | 4,054 / 3,908 / 4,380 |
-| True TPS, non-vote (now / mean) | 1,544 / 1,367 |
-| Slot time (mean / worst) | 0.266s / 0.275s |
+| Current epoch | 1038 (80.62% complete) |
+| Slot | 348,281 of 432,000 in epoch |
+| Absolute slot | 448,764,281 |
+| Block height | 426,805,003 |
+| Lifetime transactions | 550,574,312,892 |
+| TPS (now / mean / peak) | 4,212 / 4,126 / 4,526 |
+| True TPS, non-vote (now / mean) | 1,743 / 1,593 |
+| Slot time (mean / worst) | 0.267s / 0.274s |
 
-Epoch 1038 has **101,564 slots remaining**, about **7h 30m** at the current slot time.
+Epoch 1038 has **83,719 slots remaining**, about **6h 12m** at the current slot time.
 
 ## Validator set
 
 | Metric | Value |
 |---|---|
-| Active / delinquent | 678 / 12 (1.74% delinquent) |
+| Active / delinquent | 677 / 13 (1.88% delinquent) |
 | Total stake | 440,227,371 SOL |
-| Delinquent stake | 29,945 SOL (0.007%) |
+| Delinquent stake | 29,968 SOL (0.007%) |
 | Nakamoto coefficient | 18 |
 | Top 1 / top 10 stake share | 4.05% / 24.27% |
-| Commission (mean / median) | 12.52% / 5.0% |
-| Zero-commission validators | 240 |
+| Commission (mean / median) | 12.54% / 5% |
+| Zero-commission validators | 239 |
 
 ### Top validators by stake
 
@@ -76,26 +78,26 @@ Epoch 1038 has **101,564 slots remaining**, about **7h 30m** at the current slot
 | `BU5CXmHhXwZfSYwFjCjqAqdbu7MTUsiKLUj45RSXiPsE` | 1,512 | 447,874,752 |
 | `DHoZJqvvMGvAXw85Lmsob7YwQzFVisYg8HY4rt5BAj6M` | 797 | 448,492,871 |
 | `4BVYjw1ztUzUPsxsaCheWWwThT2X4rjogZytGnuWPUGg` | 65 | 446,995,996 |
+| `MajorF3gAYEmUhqkoRXoL546Zim8nMa82tuUTz9LkmE` | 24 | 448,762,375 |
 | `5yHqB3NxovCEMUniQCboaPRMyyQ7kQQF4QqvC4vaz78z` | 9 | 428,015,538 |
 | `sTach38ebT8jnGH8i2D1g8NDAS6An19whVMnSSWPXt4` | 3 | 429,535,683 |
-| `9HgX6hTfHSW2KcmopricBPVsS1pTGTEoFZji65D2yDUX` | 2 | 448,608,438 |
-| `drXsaoxWGkvjEUveMpbS1RVQmtZ7y1kb9E4YERJxCFt` | 2 | 0 |
+| `54DYhq7YnjHgVw8fKTEtYbc7qAtctWo8bjj84BrK1199` | 2 | 0 |
 
 ## Economics
 
 | Metric | Value | Change |
 |---|---|---|
-| SOL price | $108.16 | -2.99% 24h ↓ |
-| Market cap | $63.53B | |
-| Spot volume 24h | $2.85B | |
-| DeFi TVL | $6.11B | -3.07% 1d / +3.47% 7d / +14.36% 30d |
+| SOL price | $108.26 | -3.09% 24h ↓ |
+| Market cap | $63.60B | |
+| Spot volume 24h | $2.82B | |
+| DeFi TVL | $6.12B | -2.96% 1d / +3.59% 7d / +14.50% 30d |
 | TVL 90-day peak | $6.31B | |
-| Stablecoin supply (USD peg) | $16.45B | |
-| Stablecoin supply (all pegs) | $16.52B | |
+| Stablecoin supply (USD peg) | $15.45B | |
+| Stablecoin supply (all pegs) | $15.51B | |
 | DEX volume 24h | $2.88B | -18.70% 1d |
 | DEX volume 7d / 30d | $18.83B / $80.96B | |
-| Fees + app revenue 24h | $15.17M | -13.13% 1d |
-| Circulating supply | 587,366,799 SOL (92.59% of total) |
+| Fees + app revenue 24h | $15.28M | -12.50% 1d |
+| Circulating supply | 587,366,747 SOL (92.59% of total) |
 
 ### DEX volume by protocol (24h)
 
@@ -103,9 +105,9 @@ Epoch 1038 has **101,564 slots remaining**, about **7h 30m** at the current slot
 |---|---|---|
 | PumpSwap | $606.41M | 21.09% |
 | BisonFi | $386.77M | 13.45% |
-| Raydium AMM | $270.02M | 9.39% |
+| Raydium AMM | $264.60M | 9.20% |
 | HumidiFi | $228.88M | 7.96% |
-| Orca DEX | $206.86M | 7.19% |
+| Orca DEX | $200.56M | 6.98% |
 
 ## Protocol roadmap
 
@@ -137,14 +139,14 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-09-20T13:34:05Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-09-20T14:53:20Z | Change |
 |---|---|---|---|
-| SOL price | $107 | $108 | +0.67% |
-| DeFi TVL | $5.94B | $6.11B | +2.81% |
-| Stablecoin supply | $15.97B | $16.45B | +2.99% |
+| SOL price | $107 | $108 | +0.76% |
+| DeFi TVL | $5.94B | $6.12B | +2.93% |
+| Stablecoin supply | $15.97B | $15.45B | -3.30% |
 | DEX volume 24h | $3.63B | $2.88B | -20.83% |
-| Mean TPS | 3,288 | 3,908 | +18.86% |
-| Active validators | 689 | 678 | -1.60% |
+| Mean TPS | 3,288 | 4,126 | +25.50% |
+| Active validators | 689 | 677 | -1.74% |
 | Nakamoto coefficient | 18 | 18 | +0.00% |
 
 ## Data sources
