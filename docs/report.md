@@ -1,21 +1,21 @@
 # Solana Ecosystem Report
 
-_Generated 2026-10-11T16:47:01Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-10-11T20:57:15Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-10-11T16:47:01Z` |
+| Snapshot | `2026-10-11T20:57:15Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 13.94s |
-| Snapshots in history | 391 |
+| Collection time | 8.75s |
+| Snapshots in history | 392 |
 | Anomalies flagged | 0 (0 critical) |
 
 ## At a glance
 
-- The network is processing **2,086 non-vote TPS** (5,136 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.220s**.
-- **672 active validators** (8 delinquent, holding 0.025% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
-- **SOL at $112.08** (+1.83% over 24h), market cap $66.04B.
-- **DeFi TVL $6.19B** (-5.11% 7d, +7.62% 30d), against $15.99B of stablecoins settled on Solana.
+- The network is processing **1,952 non-vote TPS** (5,017 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.218s**.
+- **672 active validators** (9 delinquent, holding 0.024% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
+- **SOL at $111.2** (+0.81% over 24h), market cap $65.51B.
+- **DeFi TVL $6.25B** (-5.46% 7d, +8.69% 30d), against $16.00B of stablecoins settled on Solana.
 - **$1.29B of DEX volume in 24h** across 130 protocols, generating $11.94M in fees.
 
 ## Anomalies
@@ -28,54 +28,55 @@ No anomalies detected. Every monitored metric is inside its absolute safety band
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.3.0 |
-| Current epoch | 1054 (91.26% complete) |
-| Slot | 394,231 of 432,000 in epoch |
-| Absolute slot | 455,722,231 |
-| Block height | 433,759,363 |
-| Lifetime transactions | 558,801,116,905 |
-| TPS (now / mean / peak) | 4,868 / 5,136 / 6,138 |
-| True TPS, non-vote (now / mean) | 1,856 / 2,086 |
-| Slot time (mean / worst) | 0.22s / 0.23s |
+| Current epoch | 1055 (7.13% complete) |
+| Slot | 30,823 of 432,000 in epoch |
+| Absolute slot | 455,790,823 |
+| Block height | 433,827,949 |
+| Lifetime transactions | 558,877,661,192 |
+| TPS (now / mean / peak) | 4,992 / 5,017 / 5,990 |
+| True TPS, non-vote (now / mean) | 1,884 / 1,952 |
+| Slot time (mean / worst) | 0.218s / 0.227s |
 
-Epoch 1054 has **37,769 slots remaining**, about **2h 18m** at the current slot time.
+Epoch 1055 has **401,177 slots remaining**, about **24h 17m** at the current slot time.
 
 ## Validator set
 
 | Metric | Value |
 |---|---|
-| Active / delinquent | 672 / 8 (1.18% delinquent) |
-| Total stake | 438,737,964 SOL |
-| Delinquent stake | 110,378 SOL (0.025%) |
+| Active / delinquent | 672 / 9 (1.32% delinquent) |
+| Total stake | 438,762,140 SOL |
+| Delinquent stake | 107,352 SOL (0.024%) |
 | Nakamoto coefficient | 18 |
 | Top 1 / top 10 stake share | 4.05% / 24.47% |
-| Commission (mean / median) | 13.09% / 5.0% |
-| Zero-commission validators | 231 |
+| Commission (mean / median) | 12.8% / 5.0% |
+| Zero-commission validators | 232 |
 
 ### Top validators by stake
 
 | # | Vote account | Stake (SOL) | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1` | 17,775,444 | 4.051% | 7% |
-| 2 | `he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk` | 15,954,957 | 3.637% | 0% |
-| 3 | `3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g` | 12,313,356 | 2.807% | 0% |
-| 4 | `8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD` | 11,145,934 | 2.540% | 0% |
-| 5 | `CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb` | 10,754,664 | 2.451% | 5% |
-| 6 | `51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm` | 9,328,689 | 2.126% | 10% |
-| 7 | `26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx` | 9,240,266 | 2.106% | 7% |
-| 8 | `9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF` | 7,603,786 | 1.733% | 7% |
-| 9 | `CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB` | 6,810,142 | 1.552% | 5% |
-| 10 | `3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf` | 6,421,774 | 1.464% | 0% |
+| 1 | `CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1` | 17,781,885 | 4.053% | 7% |
+| 2 | `he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk` | 15,956,122 | 3.637% | 0% |
+| 3 | `3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g` | 12,320,023 | 2.808% | 0% |
+| 4 | `8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD` | 11,147,729 | 2.541% | 0% |
+| 5 | `CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb` | 10,755,463 | 2.451% | 5% |
+| 6 | `51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm` | 9,332,199 | 2.127% | 10% |
+| 7 | `26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx` | 9,248,710 | 2.108% | 7% |
+| 8 | `9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF` | 7,607,284 | 1.734% | 7% |
+| 9 | `CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB` | 6,811,094 | 1.552% | 5% |
+| 10 | `3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf` | 6,422,658 | 1.464% | 0% |
 
 ### Delinquent validators (top by stake)
 
 | Vote account | Stake (SOL) | Last vote slot |
 |---|---|---|
-| `tboxpC4pHDqMfg5waLxSF7F2QaZvrUDge8MxSSnoZif` | 63,407 | 455,692,077 |
-| `5DutFKQ8qPmbjFEmp31QH9JDYJXvwh9pma8ap5Phxk6H` | 32,810 | 455,716,932 |
-| `5cwxevV9u1poNgfc1tKxMfEGX4oKt1DZNSHg48Umubm3` | 8,946 | 454,213,564 |
+| `3jkJVgfz1zrHSy6YLK6g96eTj49kCnDj2i8AbbKLZhkk` | 60,807 | 455,786,019 |
+| `5DutFKQ8qPmbjFEmp31QH9JDYJXvwh9pma8ap5Phxk6H` | 32,798 | 455,716,932 |
+| `5cwxevV9u1poNgfc1tKxMfEGX4oKt1DZNSHg48Umubm3` | 8,501 | 454,213,564 |
 | `EhFqitfsRp2iyL8dhm94a6APQvd5mT9AV7BTtGTCMSBM` | 5,000 | 455,566,680 |
-| `7sBYPueerpq3kKjmuimJkGr7jmiM8ZZ74pXPMEcBSxo5` | 209 | 454,213,509 |
-| `sTach38ebT8jnGH8i2D1g8NDAS6An19whVMnSSWPXt4` | 3 | 429,535,683 |
+| `7sBYPueerpq3kKjmuimJkGr7jmiM8ZZ74pXPMEcBSxo5` | 210 | 454,213,509 |
+| `DHoZJqvvMGvAXw85Lmsob7YwQzFVisYg8HY4rt5BAj6M` | 30 | 448,492,871 |
+| `R1vAoSPFQdCc6wsAEMtxWXjqptSeN1YUiq2Zni1of21` | 3 | 384,048,870 |
 | `9HgX6hTfHSW2KcmopricBPVsS1pTGTEoFZji65D2yDUX` | 2 | 455,500,251 |
 | `DCKzmGmerGSkxFD7hXBdYx9s6m1xQdHa5DnG2FdJog6M` | 1 | 0 |
 
@@ -83,17 +84,17 @@ Epoch 1054 has **37,769 slots remaining**, about **2h 18m** at the current slot 
 
 | Metric | Value | Change |
 |---|---|---|
-| SOL price | $112.08 | +1.83% 24h ↑ |
-| Market cap | $66.04B | |
-| Spot volume 24h | $1.73B | |
-| DeFi TVL | $6.19B | -0.05% 1d / -5.11% 7d / +7.62% 30d |
-| TVL 90-day peak | $6.63B | |
-| Stablecoin supply (USD peg) | $15.99B | |
-| Stablecoin supply (all pegs) | $16.07B | |
+| SOL price | $111.2 | +0.81% 24h ↑ |
+| Market cap | $65.51B | |
+| Spot volume 24h | $1.82B | |
+| DeFi TVL | $6.25B | +0.95% 1d / -5.46% 7d / +8.69% 30d |
+| TVL 90-day peak | $6.79B | |
+| Stablecoin supply (USD peg) | $16.00B | |
+| Stablecoin supply (all pegs) | $16.08B | |
 | DEX volume 24h | $1.29B | -34.97% 1d |
 | DEX volume 7d / 30d | $13.93B / $73.48B | |
 | Fees + app revenue 24h | $11.94M | -14.21% 1d |
-| Circulating supply | 589,050,837 SOL (92.68% of total) |
+| Circulating supply | 589,107,611 SOL (92.68% of total) |
 
 ### DEX volume by protocol (24h)
 
@@ -102,8 +103,8 @@ Epoch 1054 has **37,769 slots remaining**, about **2h 18m** at the current slot 
 | PumpSwap | $235.28M | 18.29% |
 | pump.fun | $156.79M | 12.19% |
 | BisonFi | $156.53M | 12.17% |
-| Raydium AMM | $109.62M | 8.52% |
-| Orca DEX | $104.18M | 8.10% |
+| Raydium AMM | $123.99M | 9.64% |
+| Orca DEX | $115.15M | 8.95% |
 
 ## Protocol roadmap
 
@@ -135,13 +136,13 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-10-11T16:47:01Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-10-11T20:57:15Z | Change |
 |---|---|---|---|
-| SOL price | $107 | $112 | +4.32% |
-| DeFi TVL | $5.94B | $6.19B | +4.12% |
-| Stablecoin supply | $15.97B | $15.99B | +0.12% |
+| SOL price | $107 | $111 | +3.50% |
+| DeFi TVL | $5.94B | $6.25B | +5.16% |
+| Stablecoin supply | $15.97B | $16.00B | +0.19% |
 | DEX volume 24h | $3.63B | $1.29B | -64.58% |
-| Mean TPS | 3,288 | 5,136 | +56.24% |
+| Mean TPS | 3,288 | 5,017 | +52.61% |
 | Active validators | 689 | 672 | -2.47% |
 | Nakamoto coefficient | 18 | 18 | +0.00% |
 
