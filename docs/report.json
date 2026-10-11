@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11T00:13:24Z",
+  "generated_at": "2026-10-11T02:13:44Z",
   "sources": {
     "solana_rpc": "https://api.mainnet-beta.solana.com",
     "coingecko": "https://api.coingecko.com/api/v3",
@@ -14,158 +14,158 @@
     "health": "ok",
     "epoch": {
       "epoch": 1054,
-      "absolute_slot": 455448922,
-      "block_height": 433486092,
-      "slot_index": 120922,
+      "absolute_slot": 455482028,
+      "block_height": 433519192,
+      "slot_index": 154028,
       "slots_in_epoch": 432000,
-      "progress_pct": 27.99,
-      "transaction_count": 558525524930,
-      "skipped_slots_lifetime": 21962830
+      "progress_pct": 35.65,
+      "transaction_count": 558560174087,
+      "skipped_slots_lifetime": 21962836
     },
     "performance": {
       "samples": 60,
       "window_minutes": 60.0,
-      "tps_current": 5087.2,
-      "tps_mean": 4807.2,
-      "tps_max": 5415.6,
-      "tps_min": 4257.9,
-      "true_tps_current": 1971.2,
-      "true_tps_mean": 1727.9,
+      "tps_current": 4438.8,
+      "tps_mean": 4691.3,
+      "tps_max": 5232.5,
+      "tps_min": 4316.3,
+      "true_tps_current": 1456.3,
+      "true_tps_mean": 1601.2,
       "slot_time_mean_s": 0.218,
-      "slot_time_max_s": 0.23,
+      "slot_time_max_s": 0.226,
       "tps_series": [
-        4951.1,
-        5301.4,
-        4897.0,
-        4729.3,
-        4757.8,
-        4992.2,
-        4829.6,
-        4764.2,
-        4905.7,
-        4802.5,
-        4908.7,
-        4662.3,
-        4770.5,
-        4637.2,
-        5069.0,
-        5371.1,
-        5415.6,
-        5042.9,
-        5008.7,
-        5300.8,
-        4969.8,
-        4888.4,
-        4912.1,
-        4882.2,
-        4758.6,
-        4677.1,
-        4490.1,
-        5332.7,
-        5049.4,
-        4918.2,
-        4635.1,
-        4612.1,
-        4707.4,
-        4939.1,
-        4541.7,
-        4342.5,
-        4533.2,
-        4534.5,
-        4596.7,
-        4420.2,
-        4435.7,
-        4451.2,
-        4650.4,
-        4257.9,
-        4307.9,
-        4275.0,
-        4587.6,
+        5158.4,
+        5231.0,
+        5231.8,
+        5136.2,
+        5232.5,
+        5089.0,
+        5212.6,
+        5078.2,
+        4695.0,
+        4529.8,
+        4316.3,
+        4587.9,
+        4497.3,
+        4486.2,
+        4580.0,
+        4521.1,
+        4805.7,
+        4636.9,
+        4789.8,
+        4741.1,
+        4658.4,
+        4631.3,
+        4570.5,
+        4711.4,
+        4890.1,
+        4640.6,
+        4439.1,
+        4494.3,
+        4471.9,
+        4523.1,
+        4529.2,
+        4418.1,
+        4489.3,
+        4581.1,
+        4683.8,
+        4488.9,
+        4750.6,
+        4811.8,
+        5026.6,
+        4843.9,
+        4914.5,
+        4661.8,
+        4805.8,
+        4670.8,
+        4657.6,
+        4471.6,
+        4686.2,
         4596.4,
-        4652.9,
-        4914.4,
-        4848.5,
-        5298.1,
-        5226.3,
-        4816.3,
-        4754.9,
-        4697.4,
-        4808.1,
-        5036.4,
-        4872.8,
-        5087.2
+        4639.6,
+        4805.2,
+        4620.0,
+        4603.0,
+        4476.5,
+        4357.1,
+        4353.2,
+        4689.8,
+        4743.2,
+        4614.2,
+        4464.2,
+        4438.8
       ],
       "slot_time_series": [
+        0.225,
         0.221,
-        0.216,
         0.215,
-        0.22,
-        0.221,
-        0.221,
-        0.221,
-        0.217,
-        0.217,
-        0.216,
-        0.217,
-        0.219,
-        0.214,
-        0.22,
-        0.221,
-        0.217,
-        0.214,
-        0.221,
-        0.213,
-        0.221,
-        0.226,
-        0.214,
-        0.217,
-        0.214,
-        0.217,
-        0.221,
-        0.216,
-        0.215,
-        0.218,
-        0.216,
-        0.22,
-        0.217,
-        0.218,
-        0.23,
-        0.217,
-        0.218,
-        0.22,
-        0.221,
-        0.216,
-        0.221,
-        0.219,
-        0.219,
-        0.214,
-        0.224,
-        0.217,
-        0.218,
-        0.217,
-        0.221,
-        0.218,
-        0.217,
-        0.219,
-        0.215,
-        0.216,
-        0.216,
-        0.221,
-        0.219,
         0.222,
+        0.218,
+        0.217,
+        0.216,
         0.214,
-        0.229,
-        0.216
+        0.219,
+        0.22,
+        0.221,
+        0.219,
+        0.216,
+        0.215,
+        0.217,
+        0.217,
+        0.214,
+        0.216,
+        0.214,
+        0.22,
+        0.219,
+        0.219,
+        0.223,
+        0.217,
+        0.217,
+        0.215,
+        0.219,
+        0.22,
+        0.215,
+        0.217,
+        0.217,
+        0.223,
+        0.217,
+        0.215,
+        0.218,
+        0.221,
+        0.222,
+        0.217,
+        0.218,
+        0.218,
+        0.211,
+        0.216,
+        0.214,
+        0.217,
+        0.214,
+        0.216,
+        0.219,
+        0.221,
+        0.217,
+        0.216,
+        0.217,
+        0.216,
+        0.216,
+        0.217,
+        0.22,
+        0.216,
+        0.212,
+        0.214,
+        0.221,
+        0.226
       ]
     },
     "supply": {
-      "total_sol": 635598545.04,
-      "circulating_sol": 589051552.41,
+      "total_sol": 635598454.94,
+      "circulating_sol": 589051462.31,
       "non_circulating_sol": 46546992.63,
       "circulating_pct": 92.68
     },
     "version": "4.3.0",
-    "latest_blockhash_slot": 455448922
+    "latest_blockhash_slot": 455482028
   },
   "validators": {
     "ok": true,
@@ -190,7 +190,7 @@
         "stake_sol": 17775444.15,
         "stake_pct": 4.051,
         "commission": 7,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
@@ -198,7 +198,7 @@
         "stake_sol": 15954956.57,
         "stake_pct": 3.637,
         "commission": 0,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
@@ -206,7 +206,7 @@
         "stake_sol": 12313355.73,
         "stake_pct": 2.807,
         "commission": 0,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
@@ -214,7 +214,7 @@
         "stake_sol": 11145933.52,
         "stake_pct": 2.54,
         "commission": 0,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
@@ -222,7 +222,7 @@
         "stake_sol": 10754664.23,
         "stake_pct": 2.451,
         "commission": 5,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
@@ -230,7 +230,7 @@
         "stake_sol": 9328688.51,
         "stake_pct": 2.126,
         "commission": 10,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
@@ -238,7 +238,7 @@
         "stake_sol": 9240265.58,
         "stake_pct": 2.106,
         "commission": 7,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
@@ -246,7 +246,7 @@
         "stake_sol": 7603785.75,
         "stake_pct": 1.733,
         "commission": 7,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
@@ -254,7 +254,7 @@
         "stake_sol": 6810142.07,
         "stake_pct": 1.552,
         "commission": 5,
-        "last_vote": 455448953
+        "last_vote": 455482057
       },
       {
         "vote_pubkey": "3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf",
@@ -262,7 +262,7 @@
         "stake_sol": 6421774.32,
         "stake_pct": 1.464,
         "commission": 0,
-        "last_vote": 455448953
+        "last_vote": 455482057
       }
     ],
     "delinquent_validators": [
@@ -295,17 +295,17 @@
   },
   "market": {
     "ok": true,
-    "price_usd": 110.03,
-    "market_cap_usd": 64785366427.80098,
-    "volume_24h_usd": 1548229079.4973052,
-    "change_24h_pct": 0.95
+    "price_usd": 109.91,
+    "market_cap_usd": 64717602439.142,
+    "volume_24h_usd": 1517072538.349771,
+    "change_24h_pct": 0.04
   },
   "tvl": {
     "ok": true,
-    "tvl_usd": 6214507149,
-    "change_1d_pct": 0.04,
-    "change_7d_pct": -6.19,
-    "change_30d_pct": 6.1,
+    "tvl_usd": 6219171889,
+    "change_1d_pct": 0.12,
+    "change_7d_pct": -6.12,
+    "change_30d_pct": 6.18,
     "peak_90d_usd": 6786465484,
     "series": [
       {
@@ -666,42 +666,42 @@
       },
       {
         "date": 1791590400,
-        "tvl": 6214507149
+        "tvl": 6219171889
       }
     ]
   },
   "stablecoins": {
     "ok": true,
-    "usd_pegged": 16036277119.45,
-    "all_pegs_usd": 16109714962.39,
+    "usd_pegged": 16039877948.21,
+    "all_pegs_usd": 16113300247.73,
     "by_peg": {
-      "peggedUSD": 16036277119.45,
-      "peggedEUR": 69196542.87,
-      "peggedJPY": 54.68,
-      "peggedCHF": 1184242.65,
-      "peggedAUD": 72964.41,
-      "peggedVAR": 2430227.06,
-      "peggedGBP": 387663.62,
+      "peggedUSD": 16039877948.21,
+      "peggedEUR": 69216774.28,
+      "peggedJPY": 54.54,
+      "peggedCHF": 1182988.88,
+      "peggedAUD": 72629.92,
+      "peggedVAR": 2396024.21,
+      "peggedGBP": 387679.98,
       "peggedTRY": 164725.15,
-      "peggedCAD": 1421.82
+      "peggedCAD": 1421.88
     }
   },
   "dex": {
     "ok": true,
-    "volume_24h_usd": 1978097665.9099998,
-    "volume_7d_usd": 14200831495.849997,
-    "volume_30d_usd": 75190241338.73009,
-    "change_1d_pct": -25.21,
-    "change_7d_pct": -28.34,
+    "volume_24h_usd": 1579982579.57,
+    "volume_7d_usd": 13337152300.309996,
+    "volume_30d_usd": 72879412145.29008,
+    "change_1d_pct": -20.13,
+    "change_7d_pct": 1.67,
     "protocol_count": 130,
     "top_protocols": [
       {
-        "name": "PumpSwap",
-        "volume_24h_usd": 389880050
-      },
-      {
         "name": "BisonFi",
         "volume_24h_usd": 258653853
+      },
+      {
+        "name": "PumpSwap",
+        "volume_24h_usd": 235280913
       },
       {
         "name": "pump.fun",
@@ -709,24 +709,64 @@
       },
       {
         "name": "Orca DEX",
-        "volume_24h_usd": 118932611
+        "volume_24h_usd": 118513543
       },
       {
-        "name": "Meteora DLMM",
-        "volume_24h_usd": 110702771
+        "name": "Tessera V",
+        "volume_24h_usd": 107265503
       }
     ]
   },
   "fees": {
     "ok": true,
-    "fees_24h_usd": 13913073.58,
-    "fees_7d_usd": 107651444.42000003,
-    "fees_30d_usd": 476986797.9199997,
-    "change_1d_pct": -7.66
+    "fees_24h_usd": 12557135.909999998,
+    "fees_7d_usd": 101725191.20000003,
+    "fees_30d_usd": 470666849.90999985,
+    "change_1d_pct": -9.75
   },
   "upgrades": {
     "ok": true,
     "simds": [
+      {
+        "number": 674,
+        "title": "SIMD-0674: Validator Location Registration",
+        "simd": 674,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/674",
+        "updated_at": "2026-10-11T01:03:20Z",
+        "draft": false
+      },
+      {
+        "number": 648,
+        "title": "SIMD-0648: Unbound LoaderV3 Instruction Data",
+        "simd": 648,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/648",
+        "updated_at": "2026-10-11T00:45:12Z",
+        "draft": false
+      },
+      {
+        "number": 630,
+        "title": "SIMD-0630: FLH Slot Time Compensation",
+        "simd": 630,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/630",
+        "updated_at": "2026-10-11T00:43:23Z",
+        "draft": false
+      },
+      {
+        "number": 690,
+        "title": "SIMD-0690: Hash validation in v2 program migrations",
+        "simd": 690,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/690",
+        "updated_at": "2026-10-11T00:25:19Z",
+        "draft": false
+      },
+      {
+        "number": 683,
+        "title": "SIMD-0683: Pass ABIv1 input metadata via registers r3\u2013r5",
+        "simd": 683,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/683",
+        "updated_at": "2026-10-11T00:23:50Z",
+        "draft": false
+      },
       {
         "number": 677,
         "title": "SIMD-0677: Vote Account v5",
@@ -749,46 +789,6 @@
         "simd": 511,
         "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/676",
         "updated_at": "2026-10-10T17:17:00Z",
-        "draft": false
-      },
-      {
-        "number": 567,
-        "title": "SIMD-0567: CU-optimized ATA Program (`p-ATA`)",
-        "simd": 567,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/567",
-        "updated_at": "2026-10-10T05:38:43Z",
-        "draft": false
-      },
-      {
-        "number": 641,
-        "title": "SIMD-0123: Refine inclusion based on Alpenglow, remove `DepositDelegatorRewards`",
-        "simd": 123,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/641",
-        "updated_at": "2026-10-09T20:56:04Z",
-        "draft": false
-      },
-      {
-        "number": 690,
-        "title": "SIMD-0690: Hash validation in v2 program migrations",
-        "simd": 690,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/690",
-        "updated_at": "2026-10-08T12:54:38Z",
-        "draft": false
-      },
-      {
-        "number": 645,
-        "title": "SIMD-0645: SVM JIT intrinsics sol_multi3",
-        "simd": 645,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/645",
-        "updated_at": "2026-10-08T10:37:08Z",
-        "draft": false
-      },
-      {
-        "number": 691,
-        "title": "amend SIMD-0083: Update feature identifier in relax entry constraints proposal",
-        "simd": 83,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/691",
-        "updated_at": "2026-10-07T22:05:52Z",
         "draft": false
       }
     ],
@@ -837,7 +837,7 @@
       }
     ]
   },
-  "collection_seconds": 8.01,
+  "collection_seconds": 9.34,
   "sources_ok": 8,
   "sources_total": 8,
   "anomalies": []
