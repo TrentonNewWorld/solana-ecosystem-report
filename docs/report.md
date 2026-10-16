@@ -1,22 +1,22 @@
 # Solana Ecosystem Report
 
-_Generated 2026-10-16T13:55:54Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-10-16T15:34:29Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-10-16T13:55:54Z` |
+| Snapshot | `2026-10-16T15:34:29Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 8.27s |
-| Snapshots in history | 427 |
+| Collection time | 7.62s |
+| Snapshots in history | 428 |
 | Anomalies flagged | 0 (0 critical) |
 
 ## At a glance
 
-- The network is processing **2,043 non-vote TPS** (5,136 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.216s**.
+- The network is processing **2,195 non-vote TPS** (5,287 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.216s**.
 - **672 active validators** (9 delinquent, holding 0.000% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
-- **SOL at $105.33** (+4.29% over 24h), market cap $62.07B.
-- **DeFi TVL $6.00B** (-2.85% 7d, +5.32% 30d), against $15.70B of stablecoins settled on Solana.
-- **$2.54B of DEX volume in 24h** across 136 protocols, generating $12.67M in fees.
+- **SOL at $104.41** (-0.88% over 24h), market cap $61.53B.
+- **DeFi TVL $5.98B** (-3.24% 7d, +4.90% 30d), against $15.68B of stablecoins settled on Solana.
+- **$2.54B of DEX volume in 24h** across 136 protocols, generating $12.78M in fees.
 
 ## Anomalies
 
@@ -28,16 +28,16 @@ No anomalies detected. Every monitored metric is inside its absolute safety band
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.3.0 |
-| Current epoch | 1059 (40.23% complete) |
-| Slot | 173,804 of 432,000 in epoch |
-| Absolute slot | 457,661,804 |
-| Block height | 435,697,622 |
-| Lifetime transactions | 560,916,965,364 |
-| TPS (now / mean / peak) | 5,147 / 5,136 / 5,998 |
-| True TPS, non-vote (now / mean) | 2,072 / 2,043 |
-| Slot time (mean / worst) | 0.216s / 0.225s |
+| Current epoch | 1059 (46.57% complete) |
+| Slot | 201,161 of 432,000 in epoch |
+| Absolute slot | 457,689,161 |
+| Block height | 435,724,968 |
+| Lifetime transactions | 560,948,786,688 |
+| TPS (now / mean / peak) | 5,377 / 5,287 / 6,212 |
+| True TPS, non-vote (now / mean) | 2,276 / 2,195 |
+| Slot time (mean / worst) | 0.216s / 0.226s |
 
-Epoch 1059 has **258,196 slots remaining**, about **15h 29m** at the current slot time.
+Epoch 1059 has **230,839 slots remaining**, about **13h 51m** at the current slot time.
 
 ## Validator set
 
@@ -84,17 +84,17 @@ Epoch 1059 has **258,196 slots remaining**, about **15h 29m** at the current slo
 
 | Metric | Value | Change |
 |---|---|---|
-| SOL price | $105.33 | +4.29% 24h ↑ |
-| Market cap | $62.07B | |
-| Spot volume 24h | $3.09B | |
-| DeFi TVL | $6.00B | +1.07% 1d / -2.85% 7d / +5.32% 30d |
+| SOL price | $104.41 | -0.88% 24h ↓ |
+| Market cap | $61.53B | |
+| Spot volume 24h | $2.70B | |
+| DeFi TVL | $5.98B | +0.67% 1d / -3.24% 7d / +4.90% 30d |
 | TVL 90-day peak | $6.61B | |
-| Stablecoin supply (USD peg) | $15.70B | |
-| Stablecoin supply (all pegs) | $15.77B | |
+| Stablecoin supply (USD peg) | $15.68B | |
+| Stablecoin supply (all pegs) | $15.75B | |
 | DEX volume 24h | $2.54B | +19.84% 1d |
 | DEX volume 7d / 30d | $13.68B / $71.84B | |
-| Fees + app revenue 24h | $12.67M | +18.66% 1d |
-| Circulating supply | 589,324,209 SOL (92.67% of total) |
+| Fees + app revenue 24h | $12.78M | +19.71% 1d |
+| Circulating supply | 589,324,127 SOL (92.67% of total) |
 
 ### DEX volume by protocol (24h)
 
@@ -103,7 +103,7 @@ Epoch 1059 has **258,196 slots remaining**, about **15h 29m** at the current slo
 | BisonFi | $410.36M | 16.16% |
 | Orca DEX | $297.41M | 11.71% |
 | PumpSwap | $252.51M | 9.94% |
-| Raydium AMM | $196.78M | 7.75% |
+| Raydium AMM | $194.78M | 7.67% |
 | Meteora DLMM | $166.57M | 6.56% |
 
 ## Protocol roadmap
@@ -114,13 +114,13 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 | SIMD | Proposal | Updated |
 |---|---|---|
+| SIMD-677 | [SIMD-0677: Vote Account v5](https://github.com/solana-foundation/solana-improvement-documents/pull/677) _(draft)_ | 2026-10-16 |
 | SIMD-511 | [SIMD-0511: On-Chain Epoch Stakes](https://github.com/solana-foundation/solana-improvement-documents/pull/676) | 2026-10-16 |
 | SIMD-683 | [SIMD-0683: Pass ABIv1 input metadata via registers r3–r5](https://github.com/solana-foundation/solana-improvement-documents/pull/683) | 2026-10-15 |
 | SIMD-648 | [SIMD-0648: Unbound LoaderV3 Instruction Data](https://github.com/solana-foundation/solana-improvement-documents/pull/648) | 2026-10-15 |
 | SIMD-675 | [SIMD-0675: Geo-Aware Leader Schedule](https://github.com/solana-foundation/solana-improvement-documents/pull/675) | 2026-10-15 |
 | SIMD-88 | [SIMD-0088 Amendment: Hash validation in Core BPF migrations](https://github.com/solana-foundation/solana-improvement-documents/pull/696) | 2026-10-15 |
 | SIMD-565 | [[SIMD-0565] Specify compute unit costs for the SIMD-0565 secp256r1 syscalls](https://github.com/solana-foundation/solana-improvement-documents/pull/695) | 2026-10-14 |
-| SIMD-677 | [SIMD-0677: Vote Account v5](https://github.com/solana-foundation/solana-improvement-documents/pull/677) _(draft)_ | 2026-10-14 |
 | SIMD-607 | [Amend SIMD-0607: Derive per-slot decay and increase intermediate precision](https://github.com/solana-foundation/solana-improvement-documents/pull/642) | 2026-10-14 |
 
 ### Recent Agave validator releases
@@ -136,13 +136,13 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-10-16T13:55:54Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-10-16T15:34:29Z | Change |
 |---|---|---|---|
-| SOL price | $107 | $105 | -1.96% |
-| DeFi TVL | $5.94B | $6.00B | +0.97% |
-| Stablecoin supply | $15.97B | $15.70B | -1.74% |
+| SOL price | $107 | $104 | -2.82% |
+| DeFi TVL | $5.94B | $5.98B | +0.57% |
+| Stablecoin supply | $15.97B | $15.68B | -1.84% |
 | DEX volume 24h | $3.63B | $2.54B | -30.09% |
-| Mean TPS | 3,288 | 5,136 | +56.24% |
+| Mean TPS | 3,288 | 5,287 | +60.81% |
 | Active validators | 689 | 672 | -2.47% |
 | Nakamoto coefficient | 18 | 18 | +0.00% |
 
