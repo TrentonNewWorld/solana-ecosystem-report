@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T17:25:32Z",
+  "generated_at": "2026-10-28T21:38:09Z",
   "sources": {
     "solana_rpc": "https://api.mainnet-beta.solana.com",
     "coingecko": "https://api.coingecko.com/api/v3",
@@ -14,158 +14,158 @@
     "health": "ok",
     "epoch": {
       "epoch": 1070,
-      "absolute_slot": 462560098,
-      "block_height": 440584565,
-      "slot_index": 320098,
+      "absolute_slot": 462631031,
+      "block_height": 440655434,
+      "slot_index": 391031,
       "slots_in_epoch": 432000,
-      "progress_pct": 74.1,
-      "transaction_count": 564172271586,
-      "skipped_slots_lifetime": 21975533
+      "progress_pct": 90.52,
+      "transaction_count": 564207234657,
+      "skipped_slots_lifetime": 21975597
     },
     "performance": {
       "samples": 60,
       "window_minutes": 60.0,
-      "tps_current": 1507.2,
-      "tps_mean": 2074.1,
-      "tps_max": 2839.7,
-      "tps_min": 1507.2,
-      "true_tps_current": 1507.2,
-      "true_tps_mean": 2074.1,
-      "slot_time_mean_s": 0.213,
+      "tps_current": 2088.5,
+      "tps_mean": 2327.6,
+      "tps_max": 3599.4,
+      "tps_min": 1461.3,
+      "true_tps_current": 2088.5,
+      "true_tps_mean": 2327.6,
+      "slot_time_mean_s": 0.214,
       "slot_time_max_s": 0.219,
       "tps_series": [
-        1858.6,
-        1973.8,
-        2307.2,
-        2557.5,
-        2453.5,
-        2277.5,
-        2283.7,
-        1990.6,
-        2007.8,
-        2018.3,
-        1842.4,
-        1994.7,
-        2096.6,
-        1999.3,
-        2027.9,
-        1938.8,
-        1810.3,
-        2345.4,
-        1633.9,
-        1786.5,
-        1857.5,
-        2839.7,
-        1984.0,
-        1882.2,
-        1827.8,
-        1792.6,
-        1848.7,
-        1859.2,
-        1997.3,
-        2688.6,
-        2678.7,
-        2146.2,
-        2318.4,
-        1941.0,
-        2124.3,
-        2443.8,
-        1855.8,
-        2033.3,
-        2224.6,
-        2153.2,
-        2110.1,
-        2484.1,
-        2141.3,
-        2430.3,
-        2489.4,
-        2068.6,
-        2126.3,
-        2276.7,
-        2466.6,
-        1996.2,
-        1838.5,
-        1995.0,
-        1749.8,
-        1980.6,
-        1858.0,
-        1688.8,
-        1928.8,
-        2071.4,
-        1537.2,
-        1507.2
+        2329.6,
+        2547.1,
+        2709.2,
+        2602.1,
+        2621.5,
+        2587.6,
+        2659.2,
+        3126.7,
+        3125.8,
+        2896.1,
+        2149.8,
+        2069.5,
+        2320.6,
+        2951.9,
+        2331.4,
+        2496.4,
+        2690.2,
+        2554.9,
+        2201.5,
+        2443.4,
+        2510.7,
+        2411.4,
+        2729.7,
+        3599.4,
+        2867.0,
+        2389.5,
+        2485.3,
+        2534.6,
+        2266.1,
+        2246.8,
+        2320.8,
+        2321.7,
+        2406.6,
+        2383.6,
+        2398.2,
+        2292.5,
+        1982.5,
+        3095.9,
+        2662.2,
+        2007.7,
+        1906.7,
+        1740.0,
+        1933.9,
+        1829.2,
+        1970.2,
+        1880.2,
+        1796.0,
+        1748.9,
+        1963.4,
+        2041.9,
+        2198.9,
+        1882.7,
+        2382.4,
+        2682.8,
+        1461.3,
+        1667.3,
+        1478.8,
+        1815.3,
+        1860.8,
+        2088.5
       ],
       "slot_time_series": [
-        0.212,
-        0.214,
-        0.211,
-        0.211,
         0.215,
-        0.21,
-        0.213,
-        0.215,
-        0.212,
-        0.21,
-        0.214,
-        0.211,
-        0.215,
-        0.21,
-        0.211,
-        0.212,
-        0.215,
-        0.211,
-        0.211,
-        0.205,
-        0.208,
-        0.211,
-        0.214,
-        0.21,
         0.214,
         0.214,
         0.213,
-        0.214,
-        0.209,
-        0.212,
         0.213,
-        0.211,
-        0.211,
-        0.21,
-        0.212,
-        0.21,
-        0.212,
-        0.213,
-        0.21,
-        0.219,
-        0.212,
-        0.214,
-        0.214,
-        0.217,
-        0.217,
-        0.214,
-        0.217,
-        0.214,
-        0.216,
-        0.212,
-        0.217,
-        0.214,
-        0.213,
-        0.211,
         0.213,
         0.214,
         0.218,
+        0.215,
+        0.213,
         0.214,
         0.212,
-        0.208
+        0.211,
+        0.215,
+        0.211,
+        0.219,
+        0.215,
+        0.211,
+        0.213,
+        0.216,
+        0.212,
+        0.211,
+        0.214,
+        0.214,
+        0.215,
+        0.217,
+        0.213,
+        0.212,
+        0.214,
+        0.21,
+        0.216,
+        0.211,
+        0.213,
+        0.214,
+        0.213,
+        0.213,
+        0.216,
+        0.216,
+        0.214,
+        0.213,
+        0.215,
+        0.211,
+        0.214,
+        0.216,
+        0.216,
+        0.211,
+        0.212,
+        0.215,
+        0.216,
+        0.216,
+        0.211,
+        0.211,
+        0.216,
+        0.214,
+        0.211,
+        0.212,
+        0.213,
+        0.214,
+        0.217,
+        0.215
       ]
     },
     "supply": {
-      "total_sol": 636578094.12,
-      "circulating_sol": 589928301.61,
-      "non_circulating_sol": 46649792.51,
+      "total_sol": 636578000.97,
+      "circulating_sol": 589928208.25,
+      "non_circulating_sol": 46649792.72,
       "circulating_pct": 92.67
     },
     "version": "4.3.2",
-    "latest_blockhash_slot": 462560098
+    "latest_blockhash_slot": 462631031
   },
   "validators": {
     "ok": true,
@@ -190,7 +190,7 @@
         "stake_sol": 17006421.92,
         "stake_pct": 3.889,
         "commission": 7,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
@@ -198,7 +198,7 @@
         "stake_sol": 16661096.44,
         "stake_pct": 3.81,
         "commission": 0,
-        "last_vote": 462560125
+        "last_vote": 462631056
       },
       {
         "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
@@ -206,7 +206,7 @@
         "stake_sol": 12791931.11,
         "stake_pct": 2.925,
         "commission": 0,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
@@ -214,7 +214,7 @@
         "stake_sol": 10815143.08,
         "stake_pct": 2.473,
         "commission": 0,
-        "last_vote": 462560125
+        "last_vote": 462631056
       },
       {
         "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
@@ -222,7 +222,7 @@
         "stake_sol": 9718548.06,
         "stake_pct": 2.222,
         "commission": 5,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
@@ -230,7 +230,7 @@
         "stake_sol": 9464442.57,
         "stake_pct": 2.164,
         "commission": 10,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
@@ -238,7 +238,7 @@
         "stake_sol": 9208877.3,
         "stake_pct": 2.106,
         "commission": 7,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
@@ -246,7 +246,7 @@
         "stake_sol": 7757994.43,
         "stake_pct": 1.774,
         "commission": 7,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
@@ -254,7 +254,7 @@
         "stake_sol": 7041145.74,
         "stake_pct": 1.61,
         "commission": 5,
-        "last_vote": 462560125
+        "last_vote": 462631058
       },
       {
         "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
@@ -262,7 +262,7 @@
         "stake_sol": 6997044.02,
         "stake_pct": 1.6,
         "commission": 0,
-        "last_vote": 462560125
+        "last_vote": 462631058
       }
     ],
     "delinquent_validators": [
@@ -320,394 +320,394 @@
   },
   "market": {
     "ok": true,
-    "price_usd": 100.94,
-    "market_cap_usd": 59547507989.4108,
-    "volume_24h_usd": 2073096441.8320827,
-    "change_24h_pct": -0.12
+    "price_usd": 102.21,
+    "market_cap_usd": 60278100227.06898,
+    "volume_24h_usd": 2673132112.9620376,
+    "change_24h_pct": 0.63
   },
   "tvl": {
     "ok": true,
-    "tvl_usd": 5701275164,
-    "change_1d_pct": 0.64,
-    "change_7d_pct": -4.43,
-    "change_30d_pct": -13.74,
-    "peak_90d_usd": 6609100135,
+    "tvl_usd": 5721739065,
+    "change_1d_pct": 1.28,
+    "change_7d_pct": -3.83,
+    "change_30d_pct": -13.14,
+    "peak_90d_usd": 6587662106,
     "series": [
       {
         "date": 1785456000,
-        "tvl": 4810153587
+        "tvl": 4796036922
       },
       {
         "date": 1785542400,
-        "tvl": 4735869971
+        "tvl": 4721974389
       },
       {
         "date": 1785628800,
-        "tvl": 4704328517
+        "tvl": 4690604402
       },
       {
         "date": 1785715200,
-        "tvl": 4727528242
+        "tvl": 4713469214
       },
       {
         "date": 1785801600,
-        "tvl": 4750038424
+        "tvl": 4736077397
       },
       {
         "date": 1785888000,
-        "tvl": 4790469306
+        "tvl": 4776602506
       },
       {
         "date": 1785974400,
-        "tvl": 4790746268
+        "tvl": 4775949415
       },
       {
         "date": 1786060800,
-        "tvl": 4707551063
+        "tvl": 4693025704
       },
       {
         "date": 1786147200,
-        "tvl": 4734146237
+        "tvl": 4720316182
       },
       {
         "date": 1786233600,
-        "tvl": 4793619119
+        "tvl": 4779507238
       },
       {
         "date": 1786320000,
-        "tvl": 4838846669
+        "tvl": 4824637086
       },
       {
         "date": 1786406400,
-        "tvl": 4824009341
+        "tvl": 4809896243
       },
       {
         "date": 1786492800,
-        "tvl": 4848436500
+        "tvl": 4834261113
       },
       {
         "date": 1786579200,
-        "tvl": 4808400713
+        "tvl": 4794345658
       },
       {
         "date": 1786665600,
-        "tvl": 4822436083
+        "tvl": 4808270831
       },
       {
         "date": 1786752000,
-        "tvl": 4801982159
+        "tvl": 4787841836
       },
       {
         "date": 1786838400,
-        "tvl": 4794263405
+        "tvl": 4780231950
       },
       {
         "date": 1786924800,
-        "tvl": 4762461024
+        "tvl": 4748450508
       },
       {
         "date": 1787011200,
-        "tvl": 4835210087
+        "tvl": 4820990654
       },
       {
         "date": 1787097600,
-        "tvl": 4881856957
+        "tvl": 4867448122
       },
       {
         "date": 1787184000,
-        "tvl": 5211365631
+        "tvl": 5195503193
       },
       {
         "date": 1787270400,
-        "tvl": 5317321789
+        "tvl": 5300642572
       },
       {
         "date": 1787356800,
-        "tvl": 5537143263
+        "tvl": 5519603829
       },
       {
         "date": 1787443200,
-        "tvl": 5542931052
+        "tvl": 5525320614
       },
       {
         "date": 1787529600,
-        "tvl": 5546853858
+        "tvl": 5528971182
       },
       {
         "date": 1787616000,
-        "tvl": 5722818596
+        "tvl": 5704483566
       },
       {
         "date": 1787702400,
-        "tvl": 5591914928
+        "tvl": 5574290517
       },
       {
         "date": 1787788800,
-        "tvl": 5759465353
+        "tvl": 5741000006
       },
       {
         "date": 1787875200,
-        "tvl": 5998945060
+        "tvl": 5979216641
       },
       {
         "date": 1787961600,
-        "tvl": 5855308714
+        "tvl": 5836418616
       },
       {
         "date": 1788048000,
-        "tvl": 5896927382
+        "tvl": 5877871117
       },
       {
         "date": 1788134400,
-        "tvl": 5773406310
+        "tvl": 5754854864
       },
       {
         "date": 1788220800,
-        "tvl": 5970549390
+        "tvl": 5951832529
       },
       {
         "date": 1788307200,
-        "tvl": 5633696362
+        "tvl": 5615530490
       },
       {
         "date": 1788393600,
-        "tvl": 5687048346
+        "tvl": 5668932829
       },
       {
         "date": 1788480000,
-        "tvl": 5905397648
+        "tvl": 5886635961
       },
       {
         "date": 1788566400,
-        "tvl": 5845683273
+        "tvl": 5827262275
       },
       {
         "date": 1788652800,
-        "tvl": 5892851880
+        "tvl": 5874209195
       },
       {
         "date": 1788739200,
-        "tvl": 5979176416
+        "tvl": 5960029120
       },
       {
         "date": 1788825600,
-        "tvl": 5897779124
+        "tvl": 5879072389
       },
       {
         "date": 1788912000,
-        "tvl": 5929208097
+        "tvl": 5910087978
       },
       {
         "date": 1788998400,
-        "tvl": 5831775580
+        "tvl": 5813031851
       },
       {
         "date": 1789084800,
-        "tvl": 5725994807
+        "tvl": 5707592951
       },
       {
         "date": 1789171200,
-        "tvl": 5874347663
+        "tvl": 5855407363
       },
       {
         "date": 1789257600,
-        "tvl": 5881167858
+        "tvl": 5862319853
       },
       {
         "date": 1789344000,
-        "tvl": 5810382198
+        "tvl": 5791912543
       },
       {
         "date": 1789430400,
-        "tvl": 5893308408
+        "tvl": 5874333213
       },
       {
         "date": 1789516800,
-        "tvl": 5699476153
+        "tvl": 5681680346
       },
       {
         "date": 1789603200,
-        "tvl": 5756866027
+        "tvl": 5738781724
       },
       {
         "date": 1789689600,
-        "tvl": 5871750319
+        "tvl": 5853270066
       },
       {
         "date": 1789776000,
-        "tvl": 6280272394
+        "tvl": 6259768218
       },
       {
         "date": 1789862400,
-        "tvl": 6150861762
+        "tvl": 6130755573
       },
       {
         "date": 1789948800,
-        "tvl": 6180440509
+        "tvl": 6160082721
       },
       {
         "date": 1790035200,
-        "tvl": 6433710322
+        "tvl": 6412326421
       },
       {
         "date": 1790121600,
-        "tvl": 6502389625
+        "tvl": 6481173699
       },
       {
         "date": 1790208000,
-        "tvl": 6365136928
+        "tvl": 6344467930
       },
       {
         "date": 1790294400,
-        "tvl": 6455922620
+        "tvl": 6435359158
       },
       {
         "date": 1790380800,
-        "tvl": 6606805782
+        "tvl": 6585527578
       },
       {
         "date": 1790467200,
-        "tvl": 6595088609
+        "tvl": 6573979507
       },
       {
         "date": 1790553600,
-        "tvl": 6609100135
+        "tvl": 6587662106
       },
       {
         "date": 1790640000,
-        "tvl": 6427469904
+        "tvl": 6406632034
       },
       {
         "date": 1790726400,
-        "tvl": 6484533082
+        "tvl": 6463692630
       },
       {
         "date": 1790812800,
-        "tvl": 6424788257
+        "tvl": 6404369378
       },
       {
         "date": 1790899200,
-        "tvl": 6472628038
+        "tvl": 6452131768
       },
       {
         "date": 1790985600,
-        "tvl": 6501097563
+        "tvl": 6480476658
       },
       {
         "date": 1791072000,
-        "tvl": 6488973360
+        "tvl": 6468187138
       },
       {
         "date": 1791158400,
-        "tvl": 6594657908
+        "tvl": 6573523409
       },
       {
         "date": 1791244800,
-        "tvl": 6577705775
+        "tvl": 6556079350
       },
       {
         "date": 1791331200,
-        "tvl": 6594912820
+        "tvl": 6573369569
       },
       {
         "date": 1791417600,
-        "tvl": 6422329978
+        "tvl": 6401460458
       },
       {
         "date": 1791504000,
-        "tvl": 6178718881
+        "tvl": 6158898830
       },
       {
         "date": 1791590400,
-        "tvl": 6159558711
+        "tvl": 6140954326
       },
       {
         "date": 1791676800,
-        "tvl": 6181106607
+        "tvl": 6162390001
       },
       {
         "date": 1791763200,
-        "tvl": 6223125387
+        "tvl": 6204196984
       },
       {
         "date": 1791849600,
-        "tvl": 5980034799
+        "tvl": 5964417774
       },
       {
         "date": 1791936000,
-        "tvl": 6015039880
+        "tvl": 5999025261
       },
       {
         "date": 1792022400,
-        "tvl": 5934839591
+        "tvl": 5919261633
       },
       {
         "date": 1792108800,
-        "tvl": 5980950441
+        "tvl": 5965228677
       },
       {
         "date": 1792195200,
-        "tvl": 5924234495
+        "tvl": 5908662552
       },
       {
         "date": 1792281600,
-        "tvl": 5896063301
+        "tvl": 5880613397
       },
       {
         "date": 1792368000,
-        "tvl": 5851238346
+        "tvl": 5835694448
       },
       {
         "date": 1792454400,
-        "tvl": 5847044743
+        "tvl": 5831421334
       },
       {
         "date": 1792540800,
-        "tvl": 5965594197
+        "tvl": 5949707542
       },
       {
         "date": 1792627200,
-        "tvl": 5978249699
+        "tvl": 5962269230
       },
       {
         "date": 1792713600,
-        "tvl": 5861433343
+        "tvl": 5845900466
       },
       {
         "date": 1792800000,
-        "tvl": 5774931084
+        "tvl": 5759666203
       },
       {
         "date": 1792886400,
-        "tvl": 5775164239
+        "tvl": 5759837832
       },
       {
         "date": 1792972800,
-        "tvl": 5703971316
+        "tvl": 5688810605
       },
       {
         "date": 1793059200,
-        "tvl": 5664789273
+        "tvl": 5649658418
       },
       {
         "date": 1793145600,
-        "tvl": 5701275164
+        "tvl": 5721739065
       }
     ]
   },
   "stablecoins": {
     "ok": true,
-    "usd_pegged": 15119971601.1,
-    "all_pegs_usd": 15187246182.79,
+    "usd_pegged": 15464722737.36,
+    "all_pegs_usd": 15533240303.11,
     "by_peg": {
-      "peggedUSD": 15119971601.1,
-      "peggedEUR": 65411135.46,
-      "peggedJPY": 48.54,
-      "peggedCHF": 1251093.04,
-      "peggedAUD": 73853.47,
-      "peggedGBP": 375087.15,
+      "peggedUSD": 15464722737.36,
+      "peggedEUR": 66644774.1,
+      "peggedJPY": 49.3,
+      "peggedCHF": 1259321.34,
+      "peggedAUD": 74551.49,
+      "peggedGBP": 375506.33,
       "peggedTRY": 161918.95,
-      "peggedCAD": 1444.38
+      "peggedCAD": 1443.55
     }
   },
   "dex": {
@@ -720,20 +720,20 @@
     "protocol_count": 139,
     "top_protocols": [
       {
-        "name": "PumpSwap",
-        "volume_24h_usd": 193277697
+        "name": "Orca DEX",
+        "volume_24h_usd": 209432059
       },
       {
-        "name": "Manifest Trade",
-        "volume_24h_usd": 191952235
+        "name": "PumpSwap",
+        "volume_24h_usd": 193277697
       },
       {
         "name": "BisonFi",
         "volume_24h_usd": 191199190
       },
       {
-        "name": "Orca DEX",
-        "volume_24h_usd": 161855779
+        "name": "Manifest Trade",
+        "volume_24h_usd": 181867157
       },
       {
         "name": "Tessera V",
@@ -743,36 +743,28 @@
   },
   "fees": {
     "ok": true,
-    "fees_24h_usd": 10909790.929999998,
-    "fees_7d_usd": 76274697.71000005,
-    "fees_30d_usd": 412364809.7499992,
-    "change_1d_pct": -6.55
+    "fees_24h_usd": 10910238.999999998,
+    "fees_7d_usd": 76275145.78000005,
+    "fees_30d_usd": 412365257.8199992,
+    "change_1d_pct": -6.54
   },
   "upgrades": {
     "ok": true,
     "simds": [
+      {
+        "number": 676,
+        "title": "SIMD-0676: On-Chain Epoch Stakes",
+        "simd": 676,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/676",
+        "updated_at": "2026-10-28T20:40:20Z",
+        "draft": false
+      },
       {
         "number": 704,
         "title": "docs: align SIMD-0550 with the integer inflation schedule",
         "simd": 550,
         "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/704",
         "updated_at": "2026-10-28T17:15:09Z",
-        "draft": false
-      },
-      {
-        "number": 676,
-        "title": "SIMD-0676: On-Chain Epoch Stakes",
-        "simd": 676,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/676",
-        "updated_at": "2026-10-28T15:43:46Z",
-        "draft": false
-      },
-      {
-        "number": 710,
-        "title": "Mark SIMDs as Activated",
-        "simd": null,
-        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/710",
-        "updated_at": "2026-10-28T15:27:13Z",
         "draft": false
       },
       {
@@ -814,9 +806,24 @@
         "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/650",
         "updated_at": "2026-10-27T02:13:51Z",
         "draft": false
+      },
+      {
+        "number": 567,
+        "title": "SIMD-0567: CU-optimized ATA Program (`p-ATA`)",
+        "simd": 567,
+        "url": "https://github.com/solana-foundation/solana-improvement-documents/pull/567",
+        "updated_at": "2026-10-27T00:11:03Z",
+        "draft": false
       }
     ],
     "releases": [
+      {
+        "tag": "v4.4.0",
+        "name": "Release v4.4.0",
+        "published_at": "2026-10-28T20:35:10Z",
+        "prerelease": true,
+        "url": "https://github.com/anza-xyz/agave/releases/tag/v4.4.0"
+      },
       {
         "tag": "v4.5.0-alpha.4",
         "name": "Release v4.5.0-alpha.4",
@@ -851,17 +858,10 @@
         "published_at": "2026-10-08T20:27:41Z",
         "prerelease": true,
         "url": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.2"
-      },
-      {
-        "tag": "v4.5.0-alpha.1",
-        "name": "Release v4.5.0-alpha.1",
-        "published_at": "2026-10-03T06:50:48Z",
-        "prerelease": true,
-        "url": "https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.1"
       }
     ]
   },
-  "collection_seconds": 8.41,
+  "collection_seconds": 9.21,
   "sources_ok": 8,
   "sources_total": 8,
   "anomalies": [
@@ -870,16 +870,16 @@
       "code": "zscore_delinquent_stake_pct",
       "metric": "Delinquent stake",
       "value": 0.886,
-      "expected": "0.028% +/- 0.030% (median of last 528)",
-      "message": "Delinquent stake is 0.886%, 28.2 robust standard deviations above its recent median of 0.028% (+3121.8%).",
-      "z_score": 28.25
+      "expected": "0.028% +/- 0.031% (median of last 529)",
+      "message": "Delinquent stake is 0.886%, 27.6 robust standard deviations above its recent median of 0.028% (+3064.3%).",
+      "z_score": 27.56
     },
     {
       "severity": "critical",
       "code": "zscore_validators_delinquent",
       "metric": "Delinquent validators",
       "value": 30,
-      "expected": "12 +/- 2.965 (median of last 528)",
+      "expected": "12 +/- 2.965 (median of last 529)",
       "message": "Delinquent validators is 30, 6.1 robust standard deviations above its recent median of 12 (+150.0%).",
       "z_score": 6.07
     }
