@@ -1,30 +1,30 @@
 # Solana Ecosystem Report
 
-_Generated 2026-11-20T04:21:09Z from live public sources. No API keys, no third-party packages._
+_Generated 2026-11-20T08:29:42Z from live public sources. No API keys, no third-party packages._
 
 | | |
 |---|---|
-| Snapshot | `2026-11-20T04:21:09Z` |
+| Snapshot | `2026-11-20T08:29:42Z` |
 | Sources healthy | 8 of 8 |
-| Collection time | 9.41s |
-| Snapshots in history | 670 |
+| Collection time | 10.41s |
+| Snapshots in history | 671 |
 | Anomalies flagged | 3 (2 critical) |
 
 ## At a glance
 
-- The network is processing **1,690 non-vote TPS** (1,690 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.215s**.
+- The network is processing **1,321 non-vote TPS** (1,321 TPS including consensus votes) over the last 60.0 minutes, at a mean slot time of **0.216s**.
 - **659 active validators** (26 delinquent, holding 0.025% of stake). It takes **18 validators** to control a third of stake — the liveness-halting threshold.
-- **SOL at $72.5** (-2.34% over 24h), market cap $42.91B.
-- **DeFi TVL $4.70B** (-5.92% 7d, -20.95% 30d), against $12.95B of stablecoins settled on Solana.
+- **SOL at $72.63** (-2.35% over 24h), market cap $42.97B.
+- **DeFi TVL $4.69B** (-6.20% 7d, -21.18% 30d), against $12.91B of stablecoins settled on Solana.
 - **$1.85B of DEX volume in 24h** across 144 protocols, generating $9.57M in fees.
 
 ## Anomalies
 
 | Severity | Metric | Observed | Expected | What it means |
 |---|---|---|---|---|
-| 🔴 critical | SOL price | 72.5 | $104 +/- $6 (median of last 662) | SOL price is $72, 4.8 robust standard deviations below its recent median of $104 (-30.0%). |
-| 🔴 critical | Stablecoin supply | 12954494637.72 | $15,837,410,095 +/- $550,380,982 (median of last 669) | Stablecoin supply is $12,954,494,638, 5.2 robust standard deviations below its recent median of $15,837,410,095 (-18.2%). |
-| 🟠 warning | DeFi TVL | 4703332471 | $5,897,971,342 +/- $315,456,666 (median of last 668) | DeFi TVL is $4,703,332,471, 3.8 robust standard deviations below its recent median of $5,897,971,342 (-20.3%). |
+| 🔴 critical | SOL price | 72.63 | $104 +/- $6 (median of last 663) | SOL price is $73, 4.8 robust standard deviations below its recent median of $104 (-29.9%). |
+| 🔴 critical | Stablecoin supply | 12913470346.58 | $15,834,989,056 +/- $549,685,112 (median of last 670) | Stablecoin supply is $12,913,470,347, 5.3 robust standard deviations below its recent median of $15,834,989,056 (-18.4%). |
+| 🟠 warning | DeFi TVL | 4689483889 | $5,897,913,427 +/- $316,858,213 (median of last 669) | DeFi TVL is $4,689,483,889, 3.8 robust standard deviations below its recent median of $5,897,913,427 (-20.5%). |
 
 ## Network performance
 
@@ -32,16 +32,16 @@ _Generated 2026-11-20T04:21:09Z from live public sources. No API keys, no third-
 |---|---|
 | RPC health | ok |
 | Validator client version | 4.4.0 |
-| Current epoch | 1091 (66.95% complete) |
-| Slot | 289,242 of 432,000 in epoch |
-| Absolute slot | 471,601,242 |
-| Block height | 449,615,343 |
-| Lifetime transactions | 567,534,478,992 |
-| TPS (now / mean / peak) | 1,761 / 1,690 / 2,380 |
-| True TPS, non-vote (now / mean) | 1,761 / 1,690 |
-| Slot time (mean / worst) | 0.215s / 0.222s |
+| Current epoch | 1091 (83.02% complete) |
+| Slot | 358,645 of 432,000 in epoch |
+| Absolute slot | 471,670,645 |
+| Block height | 449,684,738 |
+| Lifetime transactions | 567,555,815,943 |
+| TPS (now / mean / peak) | 1,082 / 1,321 / 1,706 |
+| True TPS, non-vote (now / mean) | 1,082 / 1,321 |
+| Slot time (mean / worst) | 0.216s / 0.224s |
 
-Epoch 1091 has **142,758 slots remaining**, about **8h 31m** at the current slot time.
+Epoch 1091 has **73,355 slots remaining**, about **4h 24m** at the current slot time.
 
 ## Validator set
 
@@ -89,17 +89,17 @@ Epoch 1091 has **142,758 slots remaining**, about **8h 31m** at the current slot
 
 | Metric | Value | Change |
 |---|---|---|
-| SOL price | $72.5 | -2.34% 24h ↓ |
-| Market cap | $42.91B | |
-| Spot volume 24h | $2.45B | |
-| DeFi TVL | $4.70B | -0.20% 1d / -5.92% 7d / -20.95% 30d |
+| SOL price | $72.63 | -2.35% 24h ↓ |
+| Market cap | $42.97B | |
+| Spot volume 24h | $2.56B | |
+| DeFi TVL | $4.69B | -0.49% 1d / -6.20% 7d / -21.18% 30d |
 | TVL 90-day peak | $6.59B | |
-| Stablecoin supply (USD peg) | $12.95B | |
-| Stablecoin supply (all pegs) | $13.04B | |
+| Stablecoin supply (USD peg) | $12.91B | |
+| Stablecoin supply (all pegs) | $13.00B | |
 | DEX volume 24h | $1.85B | +1.76% 1d |
 | DEX volume 7d / 30d | $10.39B / $48.94B | |
 | Fees + app revenue 24h | $9.57M | -12.12% 1d |
-| Circulating supply | 591,851,295 SOL (92.79% of total) |
+| Circulating supply | 591,851,237 SOL (92.79% of total) |
 
 ### DEX volume by protocol (24h)
 
@@ -107,9 +107,9 @@ Epoch 1091 has **142,758 slots remaining**, about **8h 31m** at the current slot
 |---|---|---|
 | Orca DEX | $253.17M | 13.70% |
 | Meteora DLMM | $246.17M | 13.33% |
-| Raydium AMM | $224.27M | 12.14% |
 | PumpSwap | $207.82M | 11.25% |
 | BisonFi | $153.98M | 8.34% |
+| Raydium AMM | $146.56M | 7.93% |
 
 ## Protocol roadmap
 
@@ -141,13 +141,13 @@ Read from the source of record rather than a hand-kept list, so it stays correct
 
 ## Trend since first snapshot
 
-| Metric | 2026-08-28T06:17:33Z | 2026-11-20T04:21:09Z | Change |
+| Metric | 2026-08-28T06:17:33Z | 2026-11-20T08:29:42Z | Change |
 |---|---|---|---|
-| SOL price | $107 | $72 | -32.52% |
-| DeFi TVL | $5.94B | $4.70B | -20.88% |
-| Stablecoin supply | $15.97B | $12.95B | -18.90% |
+| SOL price | $107 | $73 | -32.40% |
+| DeFi TVL | $5.94B | $4.69B | -21.11% |
+| Stablecoin supply | $15.97B | $12.91B | -19.16% |
 | DEX volume 24h | $3.63B | $1.85B | -49.14% |
-| Mean TPS | 3,288 | 1,690 | -48.58% |
+| Mean TPS | 3,288 | 1,321 | -59.82% |
 | Active validators | 689 | 659 | -4.35% |
 | Nakamoto coefficient | 18 | 18 | +0.00% |
 
